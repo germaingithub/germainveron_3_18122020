@@ -14,7 +14,7 @@ header
 
 
 /*footer*/
-.foot
+footer
 {
  display: block;
  background-color: rgb(51, 49, 49);
@@ -23,10 +23,7 @@ header
  justify-content: space-between;
  
 }
-footer
-{
-    @extend .foot;
-}
+
 a
 {
  text-decoration: none;
@@ -264,6 +261,12 @@ margin-top: -60px;
 {
     background-color:#f2f2f2;
     width: 100%;
+    padding-top: 30px;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+ 
 }
 .descri_plat
 {
@@ -271,7 +274,8 @@ margin-top: -60px;
 background-color: white;
 border-radius: 15px;
 margin: 0 10px 0 10px;
-padding: 0px 0 10px 0;
+padding:1px;
+margin-bottom: 10px;
 max-height: 100px;
 flex-wrap: wrap;
 }
@@ -279,5 +283,38 @@ flex-wrap: wrap;
 {
     float: right;
     position: relative;
-    padding-top: -100px;
+    margin-top: -50px;
+    margin-right: 10px;
+    z-index: 1;
+}
+.trait 
+{
+    border-bottom:solid  #99E2D0;
+    width: 10%;
+}
+h2
+{
+    margin-left: 10px;
+    @extend .trait;
+}
+.titre_resto
+{
+    font-size: 30px;
+    font-family: shrikhand;
+}
+.logo_rest
+{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+
+.bouton
+{
+
+    color: white;
+    background-color: violet;
+    padding: 15px;
+    width: 220px;
+    margin: 30px 0px 30px 80px;
 }
