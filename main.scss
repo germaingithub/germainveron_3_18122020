@@ -1,0 +1,261 @@
+
+   html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+}
+header
+{
+ font-family: 15px;
+}
+
+img
+{
+ 
+
+}
+/*footer*/
+footer 
+{
+ display: block;
+ background-color: rgb(51, 49, 49);
+ color:white;
+ padding: 15px;
+ justify-content: space-between;
+ 
+}
+a
+{
+ text-decoration: none;
+ color: black;
+ 
+}
+p 
+{
+line-height: 5px;
+}
+h3
+{
+ line-height: 30px;
+}
+#bloc_page
+{
+ align-items: center;
+ justify-content: center;
+}
+.titre_footer
+{
+ display: flex;
+ font-size: 20px;
+ font-family: shrikhand;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-bottom: 15px;
+}
+.list_footer
+{
+ display: block;
+ flex-direction: column;
+}
+.footer_restaurant
+{
+ display: inline;
+ padding-left: 12px;
+ line-height: 1px;
+}
+.footer_partenaire
+{
+display: inline;
+padding-top: 20px;
+padding-left: 5px;
+line-height: 1px;
+}
+/*logo_start*/
+.logo_ohmyfood
+{
+ align-items: center;
+ justify-content: center;
+ padding: 30px;
+ width: 70%;
+ height: 70%;
+ 
+
+}
+
+/*bouton recherche*/
+.recherche
+{
+ display: inline;
+ align-items: center;
+ justify-content: center;
+ text-align:center;
+}
+.zone_recherche
+{
+ display: inline;
+ background-color: rgb(182, 182, 182);
+ text-align: center;
+ margin-right: 0px;
+ padding-left: 10px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-right: 10px;
+ 
+}
+.fas.fa-map-marker-alt
+{
+ 
+float: left;
+margin-left: 60px;
+margin-top: 10px;
+}
+
+.bouton
+{
+ display: inline;
+ justify-items: center;
+ align-items: center;
+ margin-left: 35px;
+ border-radius: 30px;
+ padding: 15px;
+ color: white;
+ font-size: 20px;
+ background-color: linear-gradient(to right, #9356dc, #99e2d0);
+}
+.recherche_bloc
+{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(231, 231, 231);
+ padding-top: 20px;
+
+ 
+}
+
+/*section_fonctionnement*/
+.titre_fct
+{
+ margin-left: 10px;
+ font-size: 30px;
+}
+.Fonctionnement
+{
+ padding-top: 15px;
+}
+.bloc_fonctionnement
+{
+ padding-bottom: 15px;
+ padding-top: 10px;
+}
+.diff_propos
+{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ background-color: white;
+ margin-left: 40px;
+ width: 280px;
+ gap: 5%;
+ margin-bottom: 20px;
+ background-color: rgb(238, 238, 238);
+ border-radius: 30px;
+ padding-right: 30px;
+ box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+}
+
+.number
+{
+ float: left;
+ background-color: #9356dc;
+ color: white;
+ border-radius: 250px;
+ padding: 6px 4px 8px 10px;
+ width: 20px;
+ height: 20px;
+ margin-left: -20px;
+ font-size: 22px;
+}
+
+/*section_restaurants*/
+
+
+.resto
+{
+ align-items: center;
+ justify-content: center;
+ padding-top: 20px;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-bottom: 15px;
+ background-color: #f2f2f2;
+ height: 100%;
+}
+.bloc_resto
+{
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+  
+
+}
+.logo_resto
+{
+ align-items: center;
+ justify-content: center;
+ border-radius: 20px 20px 0 0;
+ object-fit: cover;
+   
+}
+
+.nouveau
+{
+ position: relative;
+ background-color: #99E2D0;
+ padding: 10px;
+ border-radius: 5px;
+ width: 60px;
+ color:#4f8c7d;
+ font-family: bold;
+ margin-top: -180px;
+ margin-left: 250px;
+}
+.descri_resto
+{
+margin-top: 130px;
+ height:50px;
+ margin-bottom: 30px;
+ padding-top: 10px;
+ padding-bottom: 30px;
+ padding-left: 10px;
+ background-color: white;
+ font-size: 20px;
+ border-radius: 0 0px 20px 20px;
+ 
+
+ 
+}
+.descri_resto_2 {
+ padding-left: 10px;
+ height: 50px;
+ background-color: white;
+ padding-top: 10px;
+ padding-bottom: 20px;
+ margin-bottom: 15px;
+ margin-top: -10px;
+ border-radius: 0 0px 20px 20px;
+}
+.far.fa-heart
+{
+ float: left;
+position: relative;
+margin-left: 280px;
+margin-top: -50px;
+}
+@media (min-width:1024px) 
+{
+ body { background: red;}
+}

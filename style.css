@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+
    html {
        overflow-x: hidden;
    }
@@ -43,7 +43,7 @@ p
 }
 h3
 {
-    line-height: 5px;
+    line-height: 30px;
 }
 #bloc_page
 {
@@ -88,6 +88,7 @@ h3
     
 
 }
+
 /*bouton recherche*/
 .recherche
 {
@@ -102,10 +103,10 @@ h3
     background-color: rgb(182, 182, 182);
     text-align: center;
     margin-right: 0px;
-    padding-left: 120px;
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 80px;
+    padding-right: 10px;
     
 }
 .fas.fa-map-marker-alt
@@ -138,6 +139,7 @@ h3
    
     
 }
+
 /*section_fonctionnement*/
 .titre_fct
 {
@@ -167,9 +169,6 @@ h3
     border-radius: 30px;
     padding-right: 30px;
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
-    
-
-
 }
 
 .number
@@ -182,7 +181,6 @@ h3
     width: 20px;
     height: 20px;
     margin-left: -20px;
-    
     font-size: 22px;
 }
 
@@ -202,18 +200,18 @@ h3
 }
 .bloc_resto
 {
-     align-items: center;
-     justify-content: center;
-     height: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
      
 
 }
 .logo_resto
 {
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px 20px 0 0;
-       object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
       
 }
 
@@ -260,6 +258,4 @@ h3
    position: relative;
    margin-left: 280px;
    margin-top: -50px;
-   
-
 }
