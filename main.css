@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0 auto;
-  width: 90%;
 }
 
 header {
@@ -12,7 +11,7 @@ header {
 }
 
 /*footer*/
-footer {
+.foot, footer {
   display: block;
   background-color: #333131;
   color: white;
@@ -159,6 +158,7 @@ h3 {
 .bloc_fonctionnement {
   padding-bottom: 15px;
   padding-top: 10px;
+  margin-left: -25px;
 }
 
 .diff_propos {
@@ -230,6 +230,7 @@ h3 {
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .nouveau {
@@ -241,7 +242,7 @@ h3 {
   color: #4f8c7d;
   font-family: bold;
   margin-top: -180px;
-  margin-left: 250px;
+  margin-left: 220px;
 }
 
 .descri_resto {
@@ -270,13 +271,30 @@ h3 {
 .far.fa-heart {
   float: left;
   position: relative;
-  margin-left: 280px;
-  margin-top: -50px;
+  margin-left: 250px;
+  margin-top: -60px;
 }
 
-@media (min-width: 1024px) {
-  body {
-    background: red;
-  }
+/*a la francaise*/
+/*bloc titre plat*/
+.page_menu {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.descri_plat {
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 10px 0 10px;
+  padding: 0px 0 10px 0;
+  max-height: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fas.fa-check-circle {
+  float: right;
+  position: relative;
+  padding-top: -100px;
 }
 /*# sourceMappingURL=main.css.map */

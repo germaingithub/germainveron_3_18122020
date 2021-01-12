@@ -5,20 +5,16 @@
 
 body {
     margin: 0 auto;
-    width: 90%;
+
 }
 header
 {
  font-family: 15px;
 }
 
-img
-{
- 
 
-}
 /*footer*/
-footer 
+.foot
 {
  display: block;
  background-color: rgb(51, 49, 49);
@@ -26,6 +22,10 @@ footer
  padding: 15px;
  justify-content: space-between;
  
+}
+footer
+{
+    @extend .foot;
 }
 a
 {
@@ -150,6 +150,7 @@ margin-top: 10px;
 {
  padding-bottom: 15px;
  padding-top: 10px;
+ margin-left: -25px;
 }
 .diff_propos
 {
@@ -208,7 +209,7 @@ margin-top: 10px;
  justify-content: center;
  border-radius: 20px 20px 0 0;
  object-fit: cover;
-   
+   width: 100%;
 }
 
 .nouveau
@@ -221,7 +222,7 @@ margin-top: 10px;
  color:#4f8c7d;
  font-family: bold;
  margin-top: -180px;
- margin-left: 250px;
+ margin-left: 220px;
 }
 .descri_resto
 {
@@ -252,10 +253,31 @@ margin-top: 130px;
 {
  float: left;
 position: relative;
-margin-left: 280px;
-margin-top: -50px;
+margin-left: 250px;
+margin-top: -60px;
 }
-@media (min-width:1024px) 
+
+/*a la francaise*/
+
+/*bloc titre plat*/
+.page_menu
 {
- body { background: red;}
+    background-color:#f2f2f2;
+    width: 100%;
+}
+.descri_plat
+{
+
+background-color: white;
+border-radius: 15px;
+margin: 0 10px 0 10px;
+padding: 0px 0 10px 0;
+max-height: 100px;
+flex-wrap: wrap;
+}
+.fas.fa-check-circle
+{
+    float: right;
+    position: relative;
+    padding-top: -100px;
 }
