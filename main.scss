@@ -73,15 +73,20 @@ line-height: 1px;
 /*logo_start*/
 .logo_ohmyfood
 {
+    display: flex;
  align-items: center;
  justify-content: center;
- padding: 30px;
+ padding: 10px;
  width: 70%;
  height: 70%;
  
 
 }
-
+/*arrow back*/
+.fas-fa-arrow-left
+{
+    margin-top: 20px;
+}
 /*bouton recherche*/
 .recherche
 {
@@ -266,10 +271,9 @@ margin-top: -60px;
     margin-top: -40px;
     position: relative;
     z-index: 1;
-    
  
 }
-.descri_plat
+.descri_plat{
 {
 
 background-color: white;
@@ -279,8 +283,14 @@ padding:1px;
 margin-bottom: 10px;
 max-height: 100px;
 flex-wrap: wrap;
-animation: mymove 2s;
+animation: mymove .5s;
+transform: translate();
 }
+&.delay-1 {$a}
+    {
+    animation-delay: #{$a/2}s;
+}
+
 .fas.fa-check-circle
 {
     float: right;
@@ -327,23 +337,34 @@ h2
 
 @keyframes mymove {
        0% {
-           transform: scaleX(0);
+           transform: scaley(0);
        }
 
        17% {
-           transform: scaleX(.18);
+           transform: scaleY(.18);
        }
 
        24% {
-           transform: scaleX(.4);
+           transform: scaleY(.4);
        }
 
        46% {
-           transform: scaleX(.81);
+           transform: scaleY(.81);
        }
 
        100% {
-           transform: scaleX(1);
+           transform: scaleY(1);
        }
 }
 
+@keyframes mymove {transform: perspective(75px) rotateX(45deg);}
+
+.delay-0-descri_plat
+{
+    animation-delay: 50ms;
+}
+
+.delay-1-descri_plat
+{
+    animation-delay: 50ms;
+}
