@@ -1,3 +1,4 @@
+@import './variables.scss';
 
    html {
     overflow-x: hidden;
@@ -54,7 +55,6 @@ h3
 }
 .list_footer
 {
- display: block;
  flex-direction: column;
 }
 .footer_restaurant
@@ -120,7 +120,7 @@ margin-top: 10px;
  padding: 15px;
  color: white;
  font-size: 20px;
- background-color: linear-gradient(to right, #9356dc, #99e2d0);
+ background-color: linear-gradient(to right, $primary-color, $tertiary-color);
 }
 .recherche_bloc
 {
@@ -168,7 +168,7 @@ margin-top: 10px;
 .number
 {
  float: left;
- background-color: #9356dc;
+ background-color: $primary-color;
  color: white;
  border-radius: 250px;
  padding: 6px 4px 8px 10px;
@@ -212,7 +212,7 @@ margin-top: 10px;
 .nouveau
 {
  position: relative;
- background-color: #99E2D0;
+ background-color: $tertiary-color;
  padding: 10px;
  border-radius: 5px;
  width: 60px;
@@ -289,7 +289,7 @@ flex-wrap: wrap;
 }
 .trait 
 {
-    border-bottom:solid  #99E2D0;
+    border-bottom:solid $tertiary-color;
     width: 10%;
 }
 h2
