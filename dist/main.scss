@@ -217,7 +217,7 @@ h3 {
     padding: 10px;
     border-radius: 5px;
     width: 60px;
-    color: #4f8c7d;
+    color: $tertiary-color;
     font-family: bold;
     margin-top: -180px;
     margin-left: 220px;
@@ -309,44 +309,47 @@ h3 {
 
 
 .fas.fa-check-circle {
-    float: right;
+display: inline;
+padding: 31px 27px 25px 20px;
+background-color: $tertiary-color;
+border-radius: 0 15px 15px 0;
+color: white;
+}
+
+.check 
+{
+    margin-right: 0px;
     position: relative;
+    margin-bottom: 10px;
+    margin-left: 272px;
     margin-top: -50px;
-    margin-right: 10px;
-    z-index: 1;
+    border-radius: 0 15px 15 0; 
 }
 
 
-.fas.fa-check-circle {
+.check:active {
 
-    display: none;
-}
+transform: rotate(-360deg);
+         transition: transform 400ms ease-in-out;
+     transform: scale(1);
+     transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
+     width: 20%;
+
+     }
+    
+
 .descri_plat {
-
+    position: relative;
     background-color: white;
     border-radius: 15px;
-    margin: 0 10px 0 10px;
-    padding: 1px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+    padding: 1px 5px 15px 15px;
     max-height: 100px;
     flex-wrap: wrap;
     animation: mymove .5s;
     transform: scale(0 to 1);
-    z-index: 1;
-    &:active{
-    background-color: $tertiary-color;
-    transform-origin: 0%;
-    transform: scaleX(0.8);
-    transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
-    & .fas.fa-check-circle{
-        display: inline;
-          transform: rotate(-360deg);
-          transition: transform 400ms ease-in-out;
-    }
-    &::after{
-        width: 100%;
-    }
-}
+    
+
 }
 
 .trait {
