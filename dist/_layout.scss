@@ -1,4 +1,11 @@
 $color-button:linear-gradient(200deg, $secondary-color 0%, $primary-color 100%);
+/*footer*/
+footer {
+    background-color: $black-color;
+    color: $white-color;
+    padding: 15px;
+    @extend .footer;
+}
 .footer {
     .titre_footer {
         display: flex;

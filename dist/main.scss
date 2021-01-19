@@ -11,17 +11,10 @@ body {
 header {
     font-family: 15px;
 }
-/*footer*/
-footer {
-    background-color: rgb(51, 49, 49);
-    color: white;
-    padding: 15px;
-    justify-content: space-between;
-    @extend .footer;
-}
+
 a {
     text-decoration: none;
-    color: black;
+    color: $black-color;
 }
 p {
     line-height: 5px;
@@ -55,11 +48,7 @@ h3 {
     display: inline;
     background-color: rgb(182, 182, 182);
     text-align: center;
-    margin-right: 0px;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
+    padding: 20px 10px 20px 10px;
 }
 .fas.fa-map-marker-alt {
     float: left;
@@ -73,7 +62,7 @@ h3 {
     margin-left: 0px;
     border-radius: 30px;
     width: 300px;
-    color: white;
+    color: $white-color;
     font-size: 20px;
     background: $color-button;
 }
@@ -81,7 +70,7 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(231, 231, 231);
+    background-color: $back-color;
     padding-top: 20px;
 }
 /*section_fonctionnement*/
@@ -93,10 +82,10 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    background-color: $white-color;
     margin: 0 0 20px 40px;
     width: 280px;
-    background-color: rgb(238, 238, 238);
+    background-color: $back-color;
     border-radius: 30px;
     padding-right: 30px;
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
@@ -114,7 +103,7 @@ h3 {
 /*section_restaurants*/
 .resto {
     padding: 15px;
-    background-color: #f2f2f2;
+    background-color: $back-color;
     height: 100%;
 }
 .logo_resto {
@@ -134,7 +123,7 @@ h3 {
 }
 .descri_resto {
     margin: 130px 0 30px 0;
-    padding:10px 0 40px 10px;
+    padding:10px 0 50px 10px;
     background-color: $white-color;
     font-size: 20px;
     border-radius: 0 0 20px 20px;
@@ -157,6 +146,8 @@ h3 {
     background-color: #f2f2f2;
     width: 100%;
     border-radius: 40px 40px 0 0;
+    padding-top: 40px;
+    margin-top: -40px;
     position: relative;
     z-index: 1;
 }
@@ -165,36 +156,37 @@ display: inline;
 padding: 31px 27px 25px 20px;
 background-color: $tertiary-color;
 border-radius: 0 15px 15px 0;
-color: white;
+color: $white-color;
 }
 .check {
     margin-right: 0px;
     position: relative;
     margin-bottom: 10px;
-    margin-left: 272px;
+    margin-left: 250px;
     margin-top: -50px;
     border-radius: 0 15px 15 0; 
      transform: scale(0 to 1);
      transition: transform 330ms ease-in-out;
+     transition-duration: 1s;
 }
-.check:active {
-     transform: scale(2);
-     transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
-     width: 20%;
-     margin-right: 10px;transform: rotate(-360deg);
-         transition: transform 400ms ease-in-out;
-     }
+
 .descri_plat {
     position: relative;
-    background-color: white;
+    background-color: $white-color;
     border-radius: 15px;
     margin: 0 10px 10px 10px;
     padding: 1px 5px 15px 15px;
     max-height: 100px;
     flex-wrap: wrap;
     animation: mymove .5s;
+    animation-timing-function: cubic-bezier(.4, 1.03, .40, .90);
+    animation-fill-mode: both;
     transform: scale(0 to 1);
-    transition: transform 330ms ease-in-out;
+    overflow: hidden;
+&:active &.check {
+    margin-left: -70px;
+    transform: scale(2);
+}
 }
 .trait {
     border-bottom: solid $tertiary-color;
@@ -214,7 +206,7 @@ h2 {
     height: 250px;
 }
 .bouton {
-    color: white;
+    color: $white-color;
     padding: 15px;
     width: 220px;
     margin: 29px 0px 29px 80px;
