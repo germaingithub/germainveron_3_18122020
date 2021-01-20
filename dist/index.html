@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/14d0bd0a6a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
 </head>
 
 <body>
@@ -22,12 +22,13 @@
         </header>
         <section class="recherche_bloc">
             <div class="recherche" id="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <form class="millieu" method="GET" action="traitement.php">
-                    <input class="zone_recherche" type="search" value="Paris,Belleville" name="ville" id="ville" />
-                    <h1>Réservez le menu qui vous convient</h1>
-                    <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
-                    <button class="bouton" type="submit" value="Rechercher">Explorer nos restaurants</button>
+                <form class="millieu" method="GET" action="traitement.php" >
+                    <div class="rchr"><i class="fas fa-map-marker-alt"></i>
+                      <input class="zone_recherche" type="search" value="Paris,Belleville" name="ville" id="ville" />
+                    </div>
+                    <h1 class="reserv_titre">Réservez le menu qui vous convient</h1>
+                    <h3 class="decr">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+                    <button class="bouton_debut" type="submit" value="Rechercher">Explorer nos restaurants</button>
                 </form>
             </div>
         </section>

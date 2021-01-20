@@ -39,39 +39,68 @@ h3 {
 }
 /*bouton recherche*/
 .recherche {
-    display: inline;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 .zone_recherche {
     display: inline;
-    background-color: rgb(182, 182, 182);
-    text-align: center;
-    padding: 20px 10px 20px 10px;
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
 }
-.fas.fa-map-marker-alt {
-    float: left;
-    margin-left: 60px;
-    margin-top: 10px;
+
+.rchr
+{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+      background-color: #e6e6e6;
+      border-top:solid 2px grey;
 }
-.bouton {
-    display: inline;
-    justify-items: center;
-    align-items: center;
-    margin-left: 0px;
-    border-radius: 30px;
-    width: 300px;
-    color: $white-color;
-    font-size: 20px;
-    background: $color-button;
+.fas.fa-map-marker-alt
+{
+    margin-left: 50px;
 }
+.decr{
+    color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reserv_titre
+{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+.bouton_debut {
+   background: $color-button;
+   color: $white-color;
+     border-radius: 30px;
+     font-size: 20px;
+     max-width: 300px;
+     padding: 15px;
+     margin: 30px;
+     border: none;
+ 
+    
+    
+}
+.bouton_menu {
+    @extend .bouton_debut;
+    padding: 10px 50px 10px 50px;
+    margin-left: 80px;
+}
+
 .recherche_bloc {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: $back-color;
-    padding-top: 20px;
+
 }
 /*section_fonctionnement*/
 .titre_fct {
@@ -114,12 +143,12 @@ h3 {
 .nouveau {
     position: relative;
     background-color: $tertiary-color;
-    padding: 10px;
+    padding: 9px;
     border-radius: 5px;
     width: 60px;
     color: green;
     font-family: bold;
-    margin: -180px 0 0 220px;
+    margin: -180px 0 0 250px;
 }
 .descri_resto {
     margin: 130px 0 30px 0;
@@ -135,7 +164,7 @@ h3 {
 .far.fa-heart{
     float: left;
     position: relative;
-    margin: -60px 0 0 250px;
+    margin: -60px 0 0 280px;
 }
 .far.fa-heart:active{
     background: $color-button;
@@ -157,6 +186,7 @@ padding: 31px 27px 25px 20px;
 background-color: $tertiary-color;
 border-radius: 0 15px 15px 0;
 color: $white-color;
+
 }
 .check {
     margin-right: 0px;
@@ -183,8 +213,8 @@ color: $white-color;
     animation-fill-mode: both;
     transform: scale(0 to 1);
     overflow: hidden;
-&:active &.check {
-    margin-left: -70px;
+&:active.check {
+    margin-left: 70px;
     transform: scale(2);
 }
 }
@@ -204,10 +234,4 @@ h2 {
     width: 100%;
     object-fit: cover;
     height: 250px;
-}
-.bouton {
-    color: $white-color;
-    padding: 15px;
-    width: 220px;
-    margin: 29px 0px 29px 80px;
 }
