@@ -22,9 +22,83 @@ p {
 h3 {
     line-height: 30px;
 }
+/*loader*/
+#loader_1 {
+    top: 40px;
+    left: -2.5px;
+}
+
+#loader_1 span {
+    display: inline-block;
+    width: 30px;
+    height: 150px;
+   
+}
+
+#loader_1 span:nth-child(1) {
+    animation: load 1s ease-in-out infinite;
+    background-color: $primary-color;
+}
+
+#loader_1 span:nth-child(2) {
+    animation: load 1s ease-in-out 0.15s infinite;
+    background-color: $secondary-color;
+}
+
+#loader_1 span:nth-child(3) {
+    animation: load 1s ease-in-out 0.30s infinite;
+    background-color: $primary-color;
+}
+
+#loader_1 span:nth-child(4) {
+    animation: load 1s ease-in-out 0.50s infinite;
+    background-color: $secondary-color;
+}
+
+#loader_1 span:nth-child(5) {
+    animation: load 1s ease-in-out 0.70s infinite;
+    background-color:$primary-color;
+}
+
+@keyframes load {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+}
+
 #bloc_page {
     align-items: center;
     justify-content: center;
+}
+#loader_1 {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 3s;
+    font-weight: 700;
+    background-color: $back-color;
+    visibility: hidden;
+    
+}
+.titre_footer
+{
+    font-size: 30px ;
+    font-family: 'shrikhand';
+    margin-right: 10px;
+    margin-left: 10px;
 }
 /*logo_start*/
 .logo_ohmyfood {
@@ -33,10 +107,14 @@ h3 {
     width: 70%;
 }
 /*arrow back*/
-.fas.fa-arrow-left {
-    position: relative;
-    padding-top: -20px;
+.head_menu
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 100px;
 }
+
 /*bouton recherche*/
 .recherche {
     text-align: center;
@@ -111,13 +189,16 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: $white-color;
     margin: 0 0 20px 40px;
     width: 280px;
     background-color: $back-color;
     border-radius: 30px;
     padding-right: 30px;
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+    &:active{
+        opacity: 0.5;
+        background-color: $primary-color;
+    }
 }
 .number {
     background-color: $primary-color;
@@ -165,9 +246,12 @@ h3 {
     float: left;
     position: relative;
     margin: -60px 0 0 280px;
+    overflow: hidden;
+    
 }
 .far.fa-heart:active{
     background: $color-button;
+    overflow: hidden;
 }
 /*a la francaise*/
 /*bloc titre plat*/
@@ -192,12 +276,12 @@ color: $white-color;
     margin-right: 0px;
     position: relative;
     margin-bottom: 10px;
-    margin-left: 250px;
+    margin-left: 280px;
     margin-top: -50px;
     border-radius: 0 15px 15 0; 
-     transform: scale(0 to 1);
      transition: transform 330ms ease-in-out;
      transition-duration: 1s;
+     
 }
 
 .descri_plat {
@@ -208,16 +292,23 @@ color: $white-color;
     padding: 1px 5px 15px 15px;
     max-height: 100px;
     flex-wrap: wrap;
-    animation: mymove .5s;
-    animation-timing-function: cubic-bezier(.4, 1.03, .40, .90);
+    animation: fadein .5s;
     animation-fill-mode: both;
     transform: scale(0 to 1);
     overflow: hidden;
-&:active.check {
-    margin-left: 70px;
+
+.check:active {
+    
     transform: scale(2);
+    animation-duration: 2s;
+    transition: margin-left -70px;
+}
+
+.fas.fa-check-circle:active{
+    transform: rotate(360deg);
 }
 }
+
 .trait {
     border-bottom: solid $tertiary-color;
     width: 10%;
@@ -235,3 +326,29 @@ h2 {
     object-fit: cover;
     height: 250px;
 }
+
+.menuok{
+    display: flex;
+    
+    &__check{
+          margin-right: 0px;
+          position: relative;
+          margin-bottom: 10px;
+          margin-left: 280px;
+          margin-top: -50px;
+          border-radius: 0 15px 15 0;
+          transform: scale(1);
+    }
+    &__sign {
+        display: inline;
+        padding: 31px 27px 25px 20px;
+        background-color: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        color: $white-color;
+    }
+    &__check:active{
+        animation-duration: 1s;
+        transition: margin-left -70px;
+    }
+}
+

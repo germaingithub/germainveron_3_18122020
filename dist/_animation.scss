@@ -1,5 +1,5 @@
 /*animation_delay*/
-.delay-0.descri_plat {
+.delay-0.descri_plat  {
     animation-delay: 0s;
 }
 
@@ -35,13 +35,13 @@
     animation-delay: .8s;
 }
 
-@keyframes mymove {
-    0% {
-        transform: scale(0)
+@keyframes fadein {
+    from {
+        opacity: 0;
     }
 
-    100% {
-        transform: scale(1);
+    to {
+        opacity: 1;
     }
 }
 
