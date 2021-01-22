@@ -46,14 +46,14 @@
 }
 
 /*animation_validation*/
-.menuok {
+.menuok{
     display: flex;
 
     &__check {
         margin-right: 0px;
         position: relative;
         margin-bottom: 10px;
-        margin-left: 280px;
+        margin-left: 320px;
         margin-top: -50px;
         border-radius: 0 15px 15 0;
         transform: scale(1);
@@ -67,20 +67,23 @@
         color: $white-color;
     }
 
-    &__check:active {
-        animation-duration: 1s;
+    &__check:hover {
+        animation-duration: 2s;
         transition: margin-left -70px;
     }
 }
-.check:active {
+.check:hover {
 
     transform: scale(2);
     animation-duration: 2s;
-    transition: margin-left -70px;
+    
 }
 
-.fas.fa-check-circle:active {
-    transform: rotate(360deg);
+.fas.fa-check-circle:hover {
+    transform: rotate(180deg);
+}
+.Sign:hover{
+    transform: rotate(180deg);
 }
 
 /*loader*/
@@ -149,11 +152,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: visibility 3s;
     font-weight: 700;
     background-color: $back-color;
     visibility: hidden;
-
+    transition: visibility 3s;
 }
 
 .titre_footer {

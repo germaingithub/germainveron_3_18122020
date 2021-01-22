@@ -42,19 +42,9 @@
     animation-fill-mode: both;
     transform: scale(0 to 1);
     overflow: hidden;
-
-    .check:active {
-
-        transform: scale(2);
-        animation-duration: 2s;
-        transition: margin-left -70px;
-    }
-
-    .fas.fa-check-circle:active {
-        transform: rotate(360deg);
-    }
 }
-.descri_plat:active .check{
+
+.descri_plat:hover .check{
 transition: all;
 }
 
