@@ -1,4 +1,10 @@
 $color-button:linear-gradient(200deg, $secondary-color 0%, $primary-color 100%);
+/*logo_start*/
+.logo_ohmyfood {
+    margin-left: 50px;
+    padding: 20px 0 10px 0;
+    width: 70%;
+}
 /*footer*/
 footer {
     background-color: $black-color;
@@ -41,4 +47,61 @@ footer {
     background-color: $white-color;
     font-size: 20px;
     border-radius: 0 0px 20px 20px;
+}
+/*trai_titre*/
+.trait {
+    border-bottom: solid $tertiary-color;
+    width: 10%;
+}
+
+/*bouton recherche*/
+.recherche {
+    text-align: center;
+}
+
+.zone_recherche {
+    display: inline;
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.rchr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    border-top: solid 2px grey;
+}
+
+.fas.fa-map-marker-alt {
+    margin-left: 50px;
+}
+/*bouton commander*/
+.bouton_debut {
+    background: $color-button;
+    color: $white-color;
+    border-radius: 30px;
+    font-size: 20px;
+    max-width: 300px;
+    padding: 15px;
+    margin: 30px;
+    border: none;
+}
+
+.bouton_menu {
+    @extend .bouton_debut;
+    padding: 10px 50px 10px 50px;
+    margin-left: 80px;
+}
+
+.recherche_bloc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $back-color;
 }

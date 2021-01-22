@@ -1,0 +1,128 @@
+@media screen and (min-width: 1001px) {
+    #home {
+        width: 1350px;
+        margin: auto;
+
+    }
+
+    footer {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 30px;
+        padding-top: 40px;
+        max-width: 1350px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .mention {
+        margin-top: -15px;
+    }
+
+    .contact {
+        margin-top: -15px;
+    }
+
+    .titre_footer {
+        font-size-adjust: 10px;
+        margin-top: -10px;
+    }
+
+    .titre_restaurant {
+        position: relative;
+        margin-top: -320px;
+        margin-bottom: 50px;
+    }
+
+    .resto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        max-width: 1350px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+
+    }
+
+    .nouveau {
+        display: flex;
+
+
+    }
+
+    .body {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .bloc_resto {
+        display: flex;
+        justify-content: space-around;
+        max-width: 500px;
+        margin-right: 10px;
+
+    }
+
+    .bloc_fonctionnement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recherche_bloc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_ohmyfood {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_resto {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+}
+
+@media screen and (min-width : 761px) and (max-width : 999px) {
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+        padding-top: 40px;
+    }
+
+    .footer_rest {
+        margin-top: 10px;
+    }
+
+    .footer_part {
+        margin-top: 10px;
+    }
+
+    .bloc_fonctionnement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .recherche_bloc {
+        display: flex;
+        justify-content: center;
+    }
+}

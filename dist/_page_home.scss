@@ -1,0 +1,93 @@
+/*section_fonctionnement*/
+.titre_fct {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.diff_propos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 20px 40px;
+    width: 280px;
+    background-color: $back-color;
+    border-radius: 30px;
+    padding-right: 30px;
+    box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+
+    &:active {
+        opacity: 0.5;
+        background-color: $primary-color;
+    }
+}
+
+.number {
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 250px;
+    padding: 6px 4px 8px 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+    font-size: 22px;
+}
+
+/*section_restaurants*/
+.titre_resto {
+    font-size: 30px;
+    font-family: shrikhand;
+}
+
+.logo_rest {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.resto {
+    padding: 15px;
+    background-color: $back-color;
+    height: 100%;
+}
+
+.logo_resto {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.nouveau {
+    position: relative;
+    background-color: $tertiary-color;
+    padding: 9px;
+    border-radius: 5px;
+    width: 60px;
+    color: green;
+    font-family: bold;
+    margin: -180px 0 0 250px;
+}
+
+.descri_resto {
+    margin: 130px 0 30px 0;
+    padding: 10px 0 50px 10px;
+    background-color: $white-color;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.descri_resto_2 {
+    @extend.descri_resto;
+    margin-top: -5px;
+}
+
+.far.fa-heart {
+    float: left;
+    position: relative;
+    margin: -60px 0 0 280px;
+    overflow: hidden;
+
+}
+
+.far.fa-heart:active {
+    background: $color-button;
+    overflow: hidden;
+}
