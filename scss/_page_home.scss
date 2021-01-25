@@ -15,8 +15,8 @@
     padding-right: 30px;
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
 
-    &:active {
-        opacity: 0.5;
+    &:hover {
+        opacity: 0.9;
         background-color: $primary-color;
     }
 }
@@ -80,14 +80,28 @@
 }
 
 .far.fa-heart {
-    float: left;
+
     position: relative;
-    margin: -60px 0 0 280px;
-    overflow: hidden;
+   left: -35px;
+   
 
 }
+.far.fa-heart:hover{
+    display: none;
+}
 
-.far.fa-heart:active {
-    background: $color-button;
-    overflow: hidden;
+.fas.fa-heart {
+
+    position: relative;
+    color:$back-color;
+
+    
+   
+}
+
+
+.fas.fa-heart:hover {
+    color:pink;
+    transition: color 0.3s ease-out;
+
 }

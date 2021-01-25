@@ -5,48 +5,12 @@
     border-radius: 40px 40px 0 0;
     padding-top: 40px;
     margin-top: -40px;
-    position: relative;
-    z-index: 1;
-}
-
-.fas.fa-check-circle {
-    display: inline;
-    padding: 31px 27px 25px 20px;
-    background-color: $tertiary-color;
-    border-radius: 0 15px 15px 0;
-    color: $white-color;
 
 }
 
-.check {
-    margin-right: 0px;
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 280px;
-    margin-top: -50px;
-    border-radius: 0 15px 15 0;
-    transition: transform 330ms ease-in-out;
-    transition-duration: 1s;
 
-}
 
-.descri_plat {
-    position: relative;
-    background-color: $white-color;
-    border-radius: 15px;
-    margin: 0 10px 10px 10px;
-    padding: 1px 5px 15px 15px;
-    max-height: 100px;
-    flex-wrap: wrap;
-    animation: fadein .5s;
-    animation-fill-mode: both;
-    transform: scale(0 to 1);
-    overflow: hidden;
-}
 
-.descri_plat:hover .check{
-transition: all;
-}
 
 .trait {
     border-bottom: solid $tertiary-color;
@@ -69,29 +33,16 @@ h2 {
     height: 250px;
 }
 
-.menuok {
-    display: flex;
 
-    &__check {
-        margin-right: 0px;
-        position: relative;
-        margin-bottom: 10px;
-        margin-left: 280px;
-        margin-top: -50px;
-        border-radius: 0 15px 15 0;
-        transform: scale(1);
+
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
     }
 
-    &__sign {
-        display: inline;
-        padding: 31px 27px 25px 20px;
-        background-color: $tertiary-color;
-        border-radius: 0 15px 15px 0;
-        color: $white-color;
-    }
-
-    &__check:active {
-        animation-duration: 1s;
-        transition: margin-left -70px;
+    to {
+        margin-left: 150px;
+        width: 100%;
     }
 }

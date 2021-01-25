@@ -110,6 +110,10 @@ footer {
   margin-left: 80px;
 }
 
+.bouton_menu:hover {
+  opacity: 0.8;
+}
+
 .recherche_bloc {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -188,53 +192,103 @@ footer {
 }
 
 /*animation_validation*/
-.menuok {
+.check {
+  position: absolute;
+  height: 100%;
+  background-color: #99E2D0;
+  font-size: 30px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
 }
 
-.menuok__check {
-  margin-right: 0px;
+.descri_plat {
   position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1px 5px 15px 15px;
+  max-height: 80px;
+  -webkit-animation: fadein .5s;
+          animation: fadein .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  max-width: 100%;
   margin-bottom: 10px;
-  margin-left: 320px;
-  margin-top: -50px;
-  border-radius: 0 15px 15 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.menuok__sign {
+.fas.fa-check-circle {
+  display: inline-block;
+  padding: auto;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  max-width: 100%;
+}
+
+.plat:hover .fa-check-circle {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: rotate(360deg) translateY(1.2);
+          transform: rotate(360deg) translateY(1.2);
+}
+
+.plat:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: auto;
+  cursor: pointer;
+  min-height: 90px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px #0000002e;
+          box-shadow: 0px 0px 20px #0000002e;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.descri_plat:hover {
+  width: 80%;
+}
+
+.descri_plat:hover.check {
+  width: 120%;
+  -webkit-transition: -webkit-transform ease-out;
+  transition: -webkit-transform ease-out;
+  transition: transform ease-out;
+  transition: transform ease-out, -webkit-transform ease-out;
+}
+
+.fas.fa-check-circle {
   display: inline;
   padding: 31px 27px 25px 20px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   color: white;
-}
-
-.menuok__check:hover {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-transition: margin-left -70px;
-  transition: margin-left -70px;
-}
-
-.check:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.fas.fa-check-circle:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.Sign:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 /*loader*/
@@ -521,8 +575,8 @@ footer {
           box-shadow: #d1d1d1 3px 3px 3px 3px;
 }
 
-.diff_propos:active {
-  opacity: 0.5;
+.diff_propos:hover {
+  opacity: 0.9;
   background-color: #9356DC;
 }
 
@@ -587,15 +641,23 @@ footer {
 }
 
 .far.fa-heart {
-  float: left;
   position: relative;
-  margin: -60px 0 0 280px;
-  overflow: hidden;
+  left: -35px;
 }
 
-.far.fa-heart:active {
-  background: linear-gradient(200deg, #FF79DA 0%, #9356DC 100%);
-  overflow: hidden;
+.far.fa-heart:hover {
+  display: none;
+}
+
+.fas.fa-heart {
+  position: relative;
+  color: #f2f2f2;
+}
+
+.fas.fa-heart:hover {
+  color: pink;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 
 /*bloc titre plat*/
@@ -605,54 +667,6 @@ footer {
   border-radius: 40px 40px 0 0;
   padding-top: 40px;
   margin-top: -40px;
-  position: relative;
-  z-index: 1;
-}
-
-.fas.fa-check-circle {
-  display: inline;
-  padding: 31px 27px 25px 20px;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  color: white;
-}
-
-.check {
-  margin-right: 0px;
-  position: relative;
-  margin-bottom: 10px;
-  margin-left: 280px;
-  margin-top: -50px;
-  border-radius: 0 15px 15 0;
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.descri_plat {
-  position: relative;
-  background-color: white;
-  border-radius: 15px;
-  margin: 0 10px 10px 10px;
-  padding: 1px 5px 15px 15px;
-  max-height: 100px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-animation: fadein .5s;
-          animation: fadein .5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-transform: scale(0 to 1);
-          transform: scale(0 to 1);
-  overflow: hidden;
-}
-
-.descri_plat:hover .check {
-  -webkit-transition: all;
-  transition: all;
 }
 
 .trait, h2 {
@@ -676,36 +690,26 @@ h2 {
   height: 250px;
 }
 
-.menuok {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 150px;
+    width: 100%;
+  }
 }
 
-.menuok__check {
-  margin-right: 0px;
-  position: relative;
-  margin-bottom: 10px;
-  margin-left: 280px;
-  margin-top: -50px;
-  border-radius: 0 15px 15 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.menuok__sign {
-  display: inline;
-  padding: 31px 27px 25px 20px;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  color: white;
-}
-
-.menuok__check:active {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-transition: margin-left -70px;
-  transition: margin-left -70px;
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 150px;
+    width: 100%;
+  }
 }
 
 html {
@@ -764,3 +768,4 @@ h3 {
 h2 {
   margin-left: 10px;
 }
+/*# sourceMappingURL=main.css.map */
