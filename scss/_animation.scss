@@ -50,7 +50,7 @@
 
 
 .check {
-position: absolute;
+position: relative;
 height: 100%;
 background-color: #99E2D0;
 font-size: 30px;
@@ -60,21 +60,25 @@ justify-content: center;
 right: 0;
 display: flex;
 top: 0;
+max-width: 100%;
+right:-88px;
 
 }
 .descri_plat {
-    position: relative;
+
     background-color: $white-color;
     border-radius: 15px;
     padding: 1px 5px 15px 15px;
     max-height: 80px;
     animation: fadein .5s;
     animation-fill-mode: both;
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
  display: flex;
  overflow: hidden;
   flex-direction: column;
+  
+
 }
 
 .fas.fa-check-circle {
@@ -102,15 +106,16 @@ top: 0;
         cursor: pointer;
         min-height: 90px;
         border-radius: 20px;
-        box-shadow: 0px 0px 20px #0000002e;
+        background: white;
         overflow: hidden;
-       
         margin-bottom: 15px;
+        width: 100%;
 }
 .descri_plat:hover {
-    width: 80%;
+    width: 86%;
+    animation-timing-function: 1s;
     &.check{
-        width:120%;
+        
         transition: transform ease-out;
     }
 
