@@ -1,129 +1,74 @@
-/*animation_ouverture menu*/
-.delay-0.descri_plat  {
-    animation-delay: 0s;
-}
 
-.delay-1.descri_plat {
-    animation-delay: .1s;
-}
-
-.delay-2.descri_plat {
-    animation-delay: .2s;
-}
-
-.delay-3.descri_plat {
-    animation-delay: .3s;
-}
-
-.delay-4.descri_plat {
-    animation-delay: .4s;
-}
-
-.delay-5.descri_plat {
-    animation-delay: .5s;
-}
-
-.delay-6.descri_plat {
-    animation-delay: .6s;
-}
-
-.delay-7.descri_plat {
-    animation-delay: .7s;
-}
-
-.delay-8.descri_plat {
-    animation-delay: .8s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 /*animation_validation*/
 
-
+.menu_resto{
+   padding: 0px 20px;
+   margin-top: 20px;
+  
+}
 
 .check {
-position: relative;
-height: 100%;
-background-color: #99E2D0;
-font-size: 30px;
-color: white;
-align-items: center;
-justify-content: center;
-display: flex;
-top: 0;
-bottom: 0;
-max-width: 100%;
-right:-88px;
-animation-timing-function: ease-out;
+  height: 100%;
+  background-color: #99E2D0;
+  font-size: 30px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
 
 }
 .descri_plat {
+display: inline;
+     height: 100%;
+     width:100%;
+     background-color: white;
+     float: left;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
 
-    background-color: $white-color;
-    border-radius: 15px;
-    padding: 1px 0 15px 15px;
-    max-height: 80px;
-    animation: fadein .5s;
-    animation-fill-mode: both;
-    width: 100%;
- display: flex;
- overflow: hidden;
-  flex-direction: column;
-  
-
+}
+.prix{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+   
 }
 
 .fas.fa-check-circle {
-    display: inline-block;
-    padding: auto;
-    background-color: $tertiary-color;
-    border-radius: 0 15px 15px 0;
-    color: $white-color;
-    max-width: 100%;
+  
+    transform: rotate(90deg);
+    opacity: 1;
 
 }
-.plat:hover .fa-check-circle {
-    transition-duration: 1s;
-    transform: rotate(360deg)
-    translateY(1.2)
-}
-.plat:hover{
-        transition-duration: 0.4s;
-         &.check {
-             rotate: 90deg;
-             transition: transform ease-out;
-         }
-}
+      
+
 .plat{
-    display: flex;
-    position: relative;
-        cursor: pointer;
-        min-height: 90px;
-        border-radius: 20px;
-        background: white;
-        overflow: hidden;
-        margin-bottom: 15px;
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+    height: auto;
+    cursor: pointer;
+    width: 100%;
+    min-height: 90px;
+    border-radius: 20px;
+    box-shadow:0px 0px 20px #0000002e;
+    overflow: hidden;
 }
 
 .bloc{
-
-    position: relative;
-    margin-right: 15px;
-&:hover  {
-    width:80%; 
-       
-    }
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+  row-gap: 22px;
+  margin-bottom: 40px;
+  animation-name: animenu;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  opacity: 1;
+   display: flex;
+   flex-direction: column;
 }
 
 
@@ -131,20 +76,27 @@ animation-timing-function: ease-out;
      width: 80%;
      animation-timing-function: 1s;
      z-index: 20;
+     &:hover.fas.fa-check-circle{
+         transition-duration: 1s;
+         transform: rotate(360deg);
+         opacity: 1;
+     }
 
  }
-.fas.fa-check-circle {
-    display: inline;
-    padding: 31px 27px 35px 20px;
-    background-color: $tertiary-color;
-    border-radius: 0 15px 15px 0;
-    color: $white-color;
-    animation: 2s ease-in-out;
-}
 
 
 
+ @keyframes animenu {
+     from {
+         opacity: 0;
+         top: 60px;
+     }
 
+     to {
+         opacity: 1;
+         top: 0px;
+     }
+ }
 
     /*loader*/
 #loader_1 {

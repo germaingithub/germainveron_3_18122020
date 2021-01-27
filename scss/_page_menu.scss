@@ -1,15 +1,11 @@
 /*bloc titre plat*/
 .page_menu {
-    background-color: #f2f2f2;
-    width: 100%;
-    border-radius: 40px 40px 0 0;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-bottom: -40px;
-    top: -40px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+   margin-top: -90px;
+   position: absolute;
+   width: 100%;
+   background-color: #F4F4F4;
 
 }
 

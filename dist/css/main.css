@@ -7,9 +7,14 @@
 
 /*footer*/
 footer {
+  position: relative;
   background-color: #333131;
   color: white;
   padding: 15px;
+}
+
+.footer, footer {
+  bottom: 630px;
 }
 
 .footer .titre_footer, footer .titre_footer {
@@ -127,76 +132,19 @@ footer {
   background-color: #f2f2f2;
 }
 
-/*animation_ouverture menu*/
-.delay-0.descri_plat {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.delay-1.descri_plat {
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
-}
-
-.delay-2.descri_plat {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.delay-3.descri_plat {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.delay-4.descri_plat {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-.delay-5.descri_plat {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.delay-6.descri_plat {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.delay-7.descri_plat {
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
-}
-
-.delay-8.descri_plat {
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /*animation_validation*/
+.menu_resto {
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
 .check {
-  position: relative;
   height: 100%;
   background-color: #99E2D0;
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -204,89 +152,65 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 0;
-  bottom: 0;
-  max-width: 100%;
-  right: -88px;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .descri_plat {
-  background-color: white;
-  border-radius: 15px;
-  padding: 1px 0 15px 15px;
-  max-height: 80px;
-  -webkit-animation: fadein .5s;
-          animation: fadein .5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  display: inline;
+  height: 100%;
   width: 100%;
+  background-color: white;
+  float: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.prix {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.fas.fa-check-circle {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 1;
+}
+
+.plat {
+  height: auto;
+  cursor: pointer;
+  width: 100%;
+  min-height: 90px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px #0000002e;
+          box-shadow: 0px 0px 20px #0000002e;
+  overflow: hidden;
+}
+
+.bloc {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  position: relative;
+  row-gap: 22px;
+  margin-bottom: 40px;
+  -webkit-animation-name: animenu;
+          animation-name: animenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 1;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.fas.fa-check-circle {
-  display: inline-block;
-  padding: auto;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  color: white;
-  max-width: 100%;
-}
-
-.plat:hover .fa-check-circle {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transform: rotate(360deg) translateY(1.2);
-          transform: rotate(360deg) translateY(1.2);
-}
-
-.plat:hover {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-.plat:hover.check {
-  rotate: 90deg;
-  -webkit-transition: -webkit-transform ease-out;
-  transition: -webkit-transform ease-out;
-  transition: transform ease-out;
-  transition: transform ease-out, -webkit-transform ease-out;
-}
-
-.plat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  cursor: pointer;
-  min-height: 90px;
-  border-radius: 20px;
-  background: white;
-  overflow: hidden;
-  margin-bottom: 15px;
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.bloc {
-  position: relative;
-  margin-right: 15px;
-}
-
-.bloc:hover {
-  width: 80%;
 }
 
 .descri_plat:hover {
@@ -296,14 +220,34 @@ footer {
   z-index: 20;
 }
 
-.fas.fa-check-circle {
-  display: inline;
-  padding: 31px 27px 35px 20px;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  color: white;
-  -webkit-animation: 2s ease-in-out;
-          animation: 2s ease-in-out;
+.descri_plat:hover:hover.fas.fa-check-circle {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 1;
+}
+
+@-webkit-keyframes animenu {
+  from {
+    opacity: 0;
+    top: 60px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes animenu {
+  from {
+    opacity: 0;
+    top: 60px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 /*loader*/
@@ -435,7 +379,6 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 25px;
-    padding-top: 40px;
   }
   .mention {
     margin-top: -15px;
@@ -535,6 +478,21 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1350px;
+  }
+  .menu_resto {
+    gap: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .plat {
+    width: 350px;
   }
 }
 
@@ -692,21 +650,12 @@ footer {
 
 /*bloc titre plat*/
 .page_menu {
-  background-color: #f2f2f2;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -90px;
+  position: absolute;
   width: 100%;
-  border-radius: 40px 40px 0 0;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  margin-bottom: -40px;
-  top: -40px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-color: #F4F4F4;
 }
 
 .trait, h2 {
