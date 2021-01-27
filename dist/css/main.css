@@ -204,26 +204,27 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 0;
+  bottom: 0;
   max-width: 100%;
   right: -88px;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .descri_plat {
   background-color: white;
   border-radius: 15px;
-  padding: 1px 5px 15px 15px;
+  padding: 1px 0 15px 15px;
   max-height: 80px;
   -webkit-animation: fadein .5s;
           animation: fadein .5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   width: 100%;
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,8 +241,6 @@ footer {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   color: white;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
   max-width: 100%;
 }
 
@@ -257,12 +256,19 @@ footer {
           transition-duration: 0.4s;
 }
 
+.plat:hover.check {
+  rotate: 90deg;
+  -webkit-transition: -webkit-transform ease-out;
+  transition: -webkit-transform ease-out;
+  transition: transform ease-out;
+  transition: transform ease-out, -webkit-transform ease-out;
+}
+
 .plat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: auto;
   cursor: pointer;
   min-height: 90px;
   border-radius: 20px;
@@ -270,27 +276,34 @@ footer {
   overflow: hidden;
   margin-bottom: 15px;
   width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bloc {
+  position: relative;
+  margin-right: 15px;
+}
+
+.bloc:hover {
+  width: 80%;
 }
 
 .descri_plat:hover {
-  width: 86%;
+  width: 80%;
   -webkit-animation-timing-function: 1s;
           animation-timing-function: 1s;
-}
-
-.descri_plat:hover.check {
-  -webkit-transition: -webkit-transform ease-out;
-  transition: -webkit-transform ease-out;
-  transition: transform ease-out;
-  transition: transform ease-out, -webkit-transform ease-out;
+  z-index: 20;
 }
 
 .fas.fa-check-circle {
   display: inline;
-  padding: 31px 27px 25px 20px;
+  padding: 31px 27px 35px 20px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   color: white;
+  -webkit-animation: 2s ease-in-out;
+          animation: 2s ease-in-out;
 }
 
 /*loader*/
@@ -408,6 +421,9 @@ footer {
     max-width: 1350px;
     margin: 0 auto;
   }
+  .logo_ohmyfood {
+    max-width: 500px;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -418,7 +434,7 @@ footer {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 40px;
   }
   .mention {
@@ -506,7 +522,19 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 10px;
+    margin-left: 80px;
+  }
+  /*menu*/
+  .page_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -667,8 +695,11 @@ footer {
   background-color: #f2f2f2;
   width: 100%;
   border-radius: 40px 40px 0 0;
-  padding-top: 40px;
-  margin-top: -40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: -40px;
+  top: -40px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,6 +721,7 @@ h2 {
 .titre_resto {
   font-size: 30px;
   font-family: shrikhand;
+  margin-left: 20px;
 }
 
 .logo_rest {

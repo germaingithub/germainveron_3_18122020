@@ -7,14 +7,16 @@
         max-width: 1350px;
         margin: 0 auto;
     }
-
+.logo_ohmyfood{
+    max-width: 500px;
+}
 
     footer {
 
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 30px;
+        font-size: 25px;
         padding-top: 40px;
       
     }
@@ -89,9 +91,15 @@
     .menu_resto {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        margin-left: 80px;
     }
-  
+  /*menu*/
+  .page_menu{
+display: flex;
+justify-content: center;
+align-items: center;      
+
+  }
 
 }
 

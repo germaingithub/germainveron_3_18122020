@@ -57,23 +57,23 @@ font-size: 30px;
 color: white;
 align-items: center;
 justify-content: center;
-right: 0;
 display: flex;
 top: 0;
+bottom: 0;
 max-width: 100%;
 right:-88px;
+animation-timing-function: ease-out;
 
 }
 .descri_plat {
 
     background-color: $white-color;
     border-radius: 15px;
-    padding: 1px 5px 15px 15px;
+    padding: 1px 0 15px 15px;
     max-height: 80px;
     animation: fadein .5s;
     animation-fill-mode: both;
     width: 100%;
-    margin-bottom: 10px;
  display: flex;
  overflow: hidden;
   flex-direction: column;
@@ -87,7 +87,6 @@ right:-88px;
     background-color: $tertiary-color;
     border-radius: 0 15px 15px 0;
     color: $white-color;
-    transform: rotate(90deg);
     max-width: 100%;
 
 }
@@ -98,11 +97,14 @@ right:-88px;
 }
 .plat:hover{
         transition-duration: 0.4s;
+         &.check {
+             rotate: 90deg;
+             transition: transform ease-out;
+         }
 }
 .plat{
     display: flex;
     position: relative;
-        height: auto;
         cursor: pointer;
         min-height: 90px;
         border-radius: 20px;
@@ -110,23 +112,34 @@ right:-88px;
         overflow: hidden;
         margin-bottom: 15px;
         width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
 }
-.descri_plat:hover {
-    width: 86%;
-    animation-timing-function: 1s;
-    &.check{
-        
-        transition: transform ease-out;
-    }
 
+.bloc{
+
+    position: relative;
+    margin-right: 15px;
+&:hover  {
+    width:80%; 
+       
+    }
 }
+
+
+ .descri_plat:hover {
+     width: 80%;
+     animation-timing-function: 1s;
+     z-index: 20;
+
+ }
 .fas.fa-check-circle {
     display: inline;
-    padding: 31px 27px 25px 20px;
+    padding: 31px 27px 35px 20px;
     background-color: $tertiary-color;
     border-radius: 0 15px 15px 0;
     color: $white-color;
-
+    animation: 2s ease-in-out;
 }
 
 
