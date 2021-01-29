@@ -4,48 +4,4 @@
 @import 'responsive_vers';
 @import 'page_home';
 @import 'page_menu';
-html {
-    overflow-x: hidden;
-}
-body {
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-}
-header {
-    font-family: 15px;
-}
-a {
-    text-decoration: none;
-    color: $black-color;
-}
-p {
-    line-height: 5px;
-}
-h3 {
-    line-height: 30px;
-}
-
-/*arrow back*/
-.head_menu
-{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-right: 100px;
-}
-.decr{
-    color: grey;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.reserv_titre
-{
-    font-size: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-h2 {
-    margin-left: 10px;
-    @extend .trait;
-}
+@import 'mixin'

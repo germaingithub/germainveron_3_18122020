@@ -142,13 +142,20 @@ right: -50px;
 
 
 @media screen and (min-width : 761px) and (max-width : 999px) {
+    .logo_ohmyfood {
+        max-width: 300px;
+
+    }
+     .nouveau {
+         right: -350px;
+     }
 
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 20px;
-        padding-top: 40px;
+        font-size: 15px;
+        padding-top: 30px;
     }
         .footer_menu {
           
@@ -164,6 +171,9 @@ right: -50px;
 
     .footer_part {
         margin-top: 10px;
+    }
+    .titre_footer{
+        margin-top: -20px;
     }
 
     .bloc_fonctionnement {
