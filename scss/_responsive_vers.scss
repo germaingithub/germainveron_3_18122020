@@ -8,7 +8,8 @@
         margin: 0 auto;
     }
 .logo_ohmyfood{
-    max-width: 500px;
+    max-width: 300px;
+   
 }
 
     footer {
@@ -17,12 +18,21 @@
         flex-direction: row;
         justify-content: space-around;
         font-size: 25px;
-    
+        max-width: 1300px;
+        margin-left: 10px;
+
       
+    }
+    .footer_menu{
+top: 640px;
+max-width: 1320px;
+margin-left: 0;
+
     }
 
     .mention {
         margin-top: -15px;
+        padding-left: 10px;
     }
 
     .contact {
@@ -36,26 +46,36 @@
 
     .titre_restaurant {
         position: relative;
-        margin-top: -320px;
-        margin-bottom: 50px;
+      top: 90px;
+      margin-left: 50px;
+        
+
     }
 
     .resto {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 20px;
+        margin-top: 50px;
         max-width: 1350px;
-        padding-top: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
-
-
+       flex-wrap: wrap;
     }
-
+    .nouveau{
+        right: -120px;
+    }
+  
+.bloc_resto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 470px;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
     .nouveau {
         display: flex;
     }
@@ -65,12 +85,7 @@
         margin: 0 auto;
     }
 
-    .bloc_resto {
-        display: flex;
-        justify-content: space-around;
-        max-width: 500px;
-        margin-right: 10px;
-    }
+    
 
     .bloc_fonctionnement {
         display: flex;
@@ -109,7 +124,18 @@ max-width: 1350px;
 .plat{
     width: 350px;
 }
+/*coeur*/
+.coeur{
+right: -50px;
+}
 
+/*fin coeur */
+/*bouton commander */
+.bouton_menu{
+    width: 1000px;
+    align-items: center;
+}
+/*fin bouton commander */
 }
 
 
@@ -124,6 +150,13 @@ max-width: 1350px;
         font-size: 20px;
         padding-top: 40px;
     }
+        .footer_menu {
+          
+            bottom: 0;
+            max-width: 1320px;
+            margin-left: 0;
+
+        }
 
     .footer_rest {
         margin-top: 10px;

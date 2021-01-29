@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Oh my food</title>
-    <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,20 +13,21 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <!--header-->
-<header>
-    <img class="logo_ohmyfood" src="images/logo/ohmyfood.png" alt="ohmyfood.png">
 
-</header>
-<section>
-    <a href="index_p3.html"><i class="fas fa-arrow-left"></i>
-</section>
+<body>
+    <header class="head_menu">
+        <img class="logo_ohmyfood" src="images/logo/ohmyfood.png" alt="ohmyfood.png">
+        <a href="index.html"><i class="fas fa-arrow-left 2x"></i></a>
+    </header>
+
 <img class="logo_rest" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"
     width="200" height="150">
 <section class="page_menu">
     <h3 class="titre_resto">La palette du goût
-        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart "></i>
+        <i class="far fa-heart "></i>
     </h3>
-    <div class="menu_resto"></div>
+    <div class="menu_resto">
     <div class="bloc">
         <h2>ENTRÉES</h2>
         <div class="plat">
@@ -121,25 +121,21 @@
         </div>
     </div>
     <button class="bouton_menu" type="submit" value="Rechercher">Commander</button>
-
-
-
-
 </section>
 
 <!--footer-->
-<footer class="footer">
-    <div class="titre_footer">ohmyfood</div>
-    <div class="footer_rest"> <i class="fas fa-utensils"></i>
-        <h4 class="footer_restaurant">Proposer un restaurant</h4>
-    </div>
-    <div class="footer_part"> <i class="fas fa-hands-helping"></i>
-        <h4 class="footer_partenaire">Devenir partenaire</h4>
-    </div>
-    <div class="mention">
-        <p>Mentions légales</p>
-    </div>
-    <div class="contact">
-        <p>Contact</p>
-    </div>
-</footer>
+ <footer class="footer_menu">
+        <div class="titre_footer">ohmyfood</div>
+        <div class="footer_rest"> <i class="fas fa-utensils"></i>
+            <h4 class="footer_restaurant">Proposer un restaurant</h4>
+        </div>
+        <div class="footer_part"> <i class="fas fa-hands-helping"></i>
+            <h4 class="footer_partenaire">Devenir partenaire</h4>
+        </div>
+        <div class="mention">
+            <p>Mentions légales</p>
+        </div>
+         <div class="contact"><a class="contact_mail" href="mailto:contact@omfood.com"><p>Contact</p></a></div> 
+    </footer>
+</body>
+</html>

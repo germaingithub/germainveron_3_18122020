@@ -41,8 +41,9 @@ display: inline;
 
 .fas.fa-check-circle {
   
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     opacity: 1;
+    
 
 }
       
@@ -75,10 +76,12 @@ display: inline;
  .descri_plat:hover {
      width: 80%;
      animation-timing-function: 1s;
+      transition:  0.5s ease-in-out;
      z-index: 20;
-     &:hover.fas.fa-check-circle{
+     &.fas.fa-check-circle{
          transition-duration: 1s;
          transform: rotate(360deg);
+        
          opacity: 1;
      }
 
