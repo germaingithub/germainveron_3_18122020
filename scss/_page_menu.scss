@@ -1,27 +1,4 @@
-/*bloc titre plat*/
-.page_menu {
-   border-top-right-radius: 50px;
-   border-top-left-radius: 50px;
-   margin-top: -90px;
-   position: absolute;
-   width: 100%;
-   background-color: #F4F4F4;
-
-}
-
-
-
-
-
-.trait {
-    border-bottom: solid $tertiary-color;
-    width: 10%;
-}
-
-h2 {
-    margin-left: 10px;
-    @extend .trait;
-}
+/*debut menu*/
 
 .titre_resto {
     font-size: 30px;
@@ -35,16 +12,73 @@ h2 {
     height: 250px;
 }
 
+/*fin debut menu*/
 
-
-@keyframes slidein {
-    from{
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 150px;
-        width: 100%;
-    }
+/*bloc  plat*/
+.menu_resto {
+    padding: 0px 20px;
+    margin-top: 20px;
 }
+
+.check {
+    display: flex;
+    height: 100%;
+    background-color: #99E2D0;
+    font-size: 30px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.descri_plat {
+    
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    float: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    overflow: hidden;
+    padding-left: 10px;
+    
+
+}
+
+
+.prix {
+    display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.page_menu {
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+   margin-top: -90px;
+   position: relative;
+   width: 100%;
+   background-color: #F4F4F4;
+   padding-top: 15px;
+
+}
+.bloc {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    row-gap: 22px;
+    margin-bottom: 40px;
+    animation-name: animenu;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*fin plat*/

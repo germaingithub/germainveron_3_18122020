@@ -1,3 +1,4 @@
+/*base*/
 html {
     overflow-x: hidden;
 }
@@ -23,8 +24,9 @@ p {
 h3 {
     line-height: 30px;
 }
+/*fin base*/
 
-/*arrow back*/
+
 .head_menu {
     display: flex;
     align-items: center;
@@ -47,6 +49,7 @@ h3 {
 h2 {
     margin-left: 10px;
     @extend .trait;
+    text-transform: uppercase;
 }
 /*section_fonctionnement*/
 .titre_fct {
@@ -81,6 +84,7 @@ h2 {
     margin-left: -20px;
     font-size: 22px;
 }
+/*fin section_fonctionnement*/
 
 /*section_restaurants*/
 .titre_resto {
@@ -123,35 +127,36 @@ h2 {
     font-size: 20px;
     border-radius: 0 0 20px 20px;
 }
-
+.descri_resto {
+    margin-top: 130px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    background-color: $white-color;
+    font-size: 20px;
+    border-radius: 0 0px 20px 20px;
+}
 .descri_resto_2 {
     @extend.descri_resto;
-    margin-top: -5px;
+margin-top: -5px;
 }
-
+/*coeur*/
 .far.fa-heart {
-
     position: relative;
    left: -35px;
-   
-
 }
 .far.fa-heart:hover{
     display: none;
 }
 
 .fas.fa-heart {
-
     position: relative;
-    color:transparent;
-
-    
-   
+    color:transparent; 
 }
-
-
 .fas.fa-heart:hover {
-    @include coeur_anim
+      @include coeuranim
 }
 .coeur{
     display: flex;
@@ -162,10 +167,10 @@ h2 {
 .coeur_2 {
     bottom: 0;
     right: 30px;
-   
 }
 .coeur_1{
     right: -5px;
 }
+/*fin coeur*/
 
 

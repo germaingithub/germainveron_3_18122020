@@ -1,17 +1,38 @@
 @media screen and (min-width: 1001px) {
+    /*base*/
     #home {
         max-width: 1350px;
         margin: 0 auto;
     }
+
     body {
         max-width: 1350px;
         margin: 0 auto;
     }
-.logo_ohmyfood{
-    max-width: 300px;
-   
-}
 
+    .logo_ohmyfood {
+        max-width: 300px;
+             
+    }
+        .body {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        /*fin base*/
+.descri_plat:hover {
+    width: 80%;
+    animation-timing-function: 1s;
+    transition: 0.5s ease-in-out;
+    z-index: 20;
+
+    &.fas.fa-check-circle {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+}
+    /*footer*/
     footer {
 
         display: flex;
@@ -20,14 +41,11 @@
         font-size: 25px;
         max-width: 1300px;
         margin-left: 10px;
-
-      
     }
-    .footer_menu{
-top: 640px;
-max-width: 1320px;
-margin-left: 0;
 
+    .footer_menu {
+        max-width: 1320px;
+        margin-left: 0;
     }
 
     .mention {
@@ -46,12 +64,11 @@ margin-left: 0;
 
     .titre_restaurant {
         position: relative;
-      top: 90px;
-      margin-left: 50px;
-        
-
+        top: 90px;
+        margin-left: 50px;
     }
-
+    /*fin footer*/
+    /*homepage_resto*/
     .resto {
         display: flex;
         flex-wrap: wrap;
@@ -61,13 +78,14 @@ margin-left: 0;
         margin-right: 10px;
         margin-top: 50px;
         max-width: 1350px;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    .nouveau{
+
+    .nouveau {
         right: -120px;
     }
-  
-.bloc_resto {
+
+    .bloc_resto {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,17 +94,8 @@ margin-left: 0;
         margin-top: 30px;
         margin-left: 10px;
     }
-    .nouveau {
-        display: flex;
-    }
-
-    .body {
-        width: 1200px;
-        margin: 0 auto;
-    }
-
-    
-
+      /*fin homepage_resto*/
+  /*fonctionnement*/
     .bloc_fonctionnement {
         display: flex;
         align-items: center;
@@ -97,59 +106,76 @@ margin-left: 0;
         display: flex;
         justify-content: center;
     }
+    /*fin fonctionnement*/
 
-    .logo_ohmyfood {
+
+
+    /*menu*/
+    .page_menu {
         display: flex;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
+        max-width: 1350px;
     }
 
     .menu_resto {
-        display: flex;
+        gap: 50px;
+        flex-direction: row;
+         display: flex;
         flex-wrap: wrap;
         margin-left: 80px;
     }
-  /*menu*/
-  .page_menu{
-display: flex;
-justify-content: center;
-align-items: center;    
-flex-direction: column;  
-max-width: 1350px;
 
-  }
-.menu_resto{
-    gap: 50px;
-    flex-direction: row;
-}
-.plat{
-    width: 350px;
-}
-/*coeur*/
-.coeur{
-right: -50px;
-}
+    .plat {
+        width: 350px;
+    }
+ /*fin menu*/
 
-/*fin coeur */
-/*bouton commander */
-.bouton_menu{
-    width: 1000px;
-    align-items: center;
-}
-/*fin bouton commander */
+    /*coeur*/
+    .coeur {
+        right: -50px;
+    }
+    /*fin coeur */
+
+    /*bouton commander */
+    .bouton_menu {
+        width: 1000px;
+        align-items: center;
+    }
+
+    /*fin bouton commander */
 }
 
 
 
 
-@media screen and (min-width : 761px) and (max-width : 999px) {
+@media screen and (min-width : 750px) and (max-width : 999px) {
+     /*base*/
     .logo_ohmyfood {
         max-width: 300px;
-
     }
-     .nouveau {
-         right: -350px;
-     }
 
+ /*fin base*/
+    .nouveau {
+        right: -350px;
+    }
+    /*fonctionnement*/
+    .bloc_fonctionnement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .recherche_bloc {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*focntionnement*/
+
+ /*footer*/
     footer {
         display: flex;
         flex-direction: row;
@@ -157,13 +183,13 @@ right: -50px;
         font-size: 15px;
         padding-top: 30px;
     }
-        .footer_menu {
-          
-            bottom: 0;
-            max-width: 1320px;
-            margin-left: 0;
 
-        }
+    .footer_menu {
+
+        bottom: 0;
+        max-width: 1320px;
+        margin-left: 0;
+    }
 
     .footer_rest {
         margin-top: 10px;
@@ -172,19 +198,12 @@ right: -50px;
     .footer_part {
         margin-top: 10px;
     }
-    .titre_footer{
+
+    .titre_footer {
         margin-top: -20px;
     }
+   
+     /*fin footer*/
 
-    .bloc_fonctionnement {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 
-    .recherche_bloc {
-        display: flex;
-        justify-content: center;
-    }
 }

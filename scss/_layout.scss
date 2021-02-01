@@ -1,28 +1,24 @@
-$color-button:linear-gradient(200deg, $secondary-color 0%, $primary-color 100%);
+
 /*logo_start*/
 .logo_ohmyfood {
     margin-left: 50px;
     padding: 20px 0 10px 0;
     width: 70%;
 }
+
 /*footer*/
 footer {
     position: relative;
     background-color: $black-color;
     color: $white-color;
     padding: 15px;
-   
-    
 }
-.footer_menu{
-    bottom: -1450px;
-}
+
 .contact_mail {
     color:$white-color;
 }
 
     .titre_footer {
-        
         display: flex;
         font-size: 20px;
         font-family: 'shrikhand';
@@ -43,23 +39,16 @@ footer {
     }
 /*fin de footer*/
 
-/*descri resto*/
-.descri_resto {
-    margin-top: 130px;
-    height: 50px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    padding-left: 10px;
-    background-color: $white-color;
-    font-size: 20px;
-    border-radius: 0 0px 20px 20px;
-}
 /*trai_titre*/
 .trait {
     border-bottom: solid $tertiary-color;
     width: 10%;
 }
+h2 {
+    margin-left: 10px;
+    @extend .trait;
+}
+
 /*bouton recherche*/
 .recherche {
     text-align: center;
@@ -84,9 +73,15 @@ footer {
 .fas.fa-map-marker-alt {
     margin-left: 50px;
 }
+.recherche_bloc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $back-color;
+}
 /*fin bouton recherche*/
 
-/*bouton commander*/
+/*bouton commander + explorer*/
 .bouton_debut {
     background: $color-button;
     color: $white-color;
@@ -95,22 +90,18 @@ footer {
     max-width: 300px;
     padding: 15px;
     margin: 30px;
-    border: none;
-    
+    border: none; 
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 .bouton_menu {
     @extend .bouton_debut;
     padding: 10px 50px 10px 50px;
     margin-left: 80px;
+    &:hover{
+        opacity: 0.8;
+    }
 }
-.bouton_menu:hover{
-    opacity: 0.8;
-}
-
-.recherche_bloc {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $back-color;
-}
+/*fin bouton commander + explorer*/
