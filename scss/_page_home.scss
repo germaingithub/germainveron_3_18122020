@@ -6,6 +6,8 @@ html {
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 header {
@@ -18,11 +20,23 @@ a {
 }
 
 p {
-    line-height: 5px;
+
+    white-space: nowrap;
+    overflow: hidden;
+     text-overflow: ellipsis;
+    
+    
+   
 }
 
 h3 {
     line-height: 30px;
+    font-family: roboto;
+}
+h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*fin base*/
 
@@ -49,12 +63,13 @@ h3 {
 h2 {
     margin-left: 10px;
     @extend .trait;
-    text-transform: uppercase;
+   
 }
+
 /*section_fonctionnement*/
 .titre_fct {
     margin-left: 10px;
-    font-size: 30px;
+    
 }
 
 .diff_propos {
@@ -69,11 +84,18 @@ h2 {
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
 
     &:hover {
-        opacity: 0.9;
+        opacity: 0.8;
         background-color: $primary-color;
     }
 }
-
+.bloc_fonctionnement{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
 .number {
     background-color: $primary-color;
     color: $white-color;
@@ -87,9 +109,16 @@ h2 {
 /*fin section_fonctionnement*/
 
 /*section_restaurants*/
+.titre_restaurant{
+    position: relative;
+    margin-left: 20px;
+    bottom: -70px;
+
+}
 .titre_resto {
     font-size: 30px;
     font-family: shrikhand;
+
 }
 
 .logo_rest {
@@ -98,7 +127,7 @@ h2 {
     height: 250px;
 }
 .resto {
-    padding: 15px;
+    padding: 70px 15px 15px 15px;
     background-color: $back-color;
     height: 100%;
 }
@@ -108,40 +137,40 @@ h2 {
     object-fit: cover;
     width: 100%;
 }
+.lien_restaurant{
+    display: flex;
+}
 
+.descri{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
 .nouveau {
-    position: relative;
+    position: absolute;
     background-color: $tertiary-color;
     padding: 9px;
     border-radius: 5px;
     width: 60px;
     color: green;
     font-family: bold;
-    margin: -180px 0 0 250px;
+    right: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+  
 }
 
 .descri_resto {
-    margin: 130px 0 30px 0;
-    padding: 10px 0 50px 10px;
-    background-color: $white-color;
-    font-size: 20px;
-    border-radius: 0 0 20px 20px;
-}
-.descri_resto {
-    margin-top: 130px;
-    height: 50px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    height: 60px;
+    padding-bottom: 50px;
     padding-left: 10px;
     background-color: $white-color;
     font-size: 20px;
-    border-radius: 0 0px 20px 20px;
+    border-radius: 0 0px 20px 20px; 
+    margin-top: -30px;
 }
-.descri_resto_2 {
-    @extend.descri_resto;
-margin-top: -5px;
-}
+
 /*coeur*/
 .far.fa-heart {
     position: relative;
@@ -149,27 +178,57 @@ margin-top: -5px;
 }
 .far.fa-heart:hover{
     display: none;
+  
 }
 
 .fas.fa-heart {
-    position: relative;
+    position: absolute;
     color:transparent; 
+    right: 33.5px;
+    top: -1.6px;
+    
 }
 .fas.fa-heart:hover {
-      @include coeuranim
+      @include coeuranim;
+      z-index: 2;
+      font-size:35px ;
+     
+
 }
 .coeur{
+ 
+ display: flex;
+justify-content: right;
+position: relative;
+ top: -60px;
+}
+.coeur_menu{
     display: flex;
+    justify-content: right;
     position: relative;
-    right: -250px;
-    top: -65px;
 }
-.coeur_2 {
-    bottom: 0;
-    right: 30px;
+
+.cm_1 {
+    position: relative;
+    right: 35px;
+    color: blue;
 }
-.coeur_1{
-    right: -5px;
+
+
+
+.cm_2 {
+    position: relative;
+    right: 0px;
+    top: 1.8px;
+
+}
+
+.cm_2:hover {
+    @include coeuranim;
+    z-index: 2;
+    font-size: 35px;
+    
+
 }
 /*fin coeur*/
 

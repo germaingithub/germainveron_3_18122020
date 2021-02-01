@@ -20,10 +20,11 @@
         }
         /*fin base*/
 .descri_plat:hover {
-    width: 80%;
+    width: 70%;
     animation-timing-function: 1s;
     transition: 0.5s ease-in-out;
-    z-index: 20;
+    max-width: 250px;
+  
 
     &.fas.fa-check-circle {
         transition-duration: 1s;
@@ -81,9 +82,13 @@
         flex-wrap: wrap;
     }
 
-    .nouveau {
-        right: -120px;
-    }
+   .nouveau{
+       display: flex;
+       position: relative;
+       left: 1050px;
+       top: 500px;
+
+   }
 
     .bloc_resto {
         display: flex;
@@ -98,8 +103,7 @@
   /*fonctionnement*/
     .bloc_fonctionnement {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
     }
 
     .recherche_bloc {
@@ -130,12 +134,15 @@
     .plat {
         width: 350px;
     }
+    .titre-resto{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
  /*fin menu*/
 
     /*coeur*/
-    .coeur {
-        right: -50px;
-    }
+   
     /*fin coeur */
 
     /*bouton commander */

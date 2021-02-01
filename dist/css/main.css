@@ -1,8 +1,8 @@
 /*logo_start*/
 .logo_ohmyfood {
-  margin-left: 50px;
+  margin-left: 100px;
   padding: 20px 0 10px 0;
-  width: 70%;
+  width: 50%;
 }
 
 /*footer*/
@@ -186,6 +186,9 @@ h2 {
 }
 
 .plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: auto;
   cursor: pointer;
   width: 100%;
@@ -196,17 +199,53 @@ h2 {
   overflow: hidden;
 }
 
+.plat {
+  -webkit-animation-name: fadein 1s;
+          animation-name: fadein 1s;
+}
+
 .plat:hover .descri_plat {
-  width: 80%;
+  width: 70%;
   -webkit-animation-timing-function: 1s;
           animation-timing-function: 1s;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  min-width: 250px;
 }
 
 .plat:hover .fas.fa-check-circle {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.plat:hover .check {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0px;
+  width: 100%;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-transform: scalex(1);
+          transform: scalex(1);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes animrotate {
@@ -382,12 +421,12 @@ h2 {
   }
   /*fin base*/
   .descri_plat:hover {
-    width: 80%;
+    width: 70%;
     -webkit-animation-timing-function: 1s;
             animation-timing-function: 1s;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    z-index: 20;
+    max-width: 250px;
   }
   .descri_plat:hover.fas.fa-check-circle {
     -webkit-transition-duration: 1s;
@@ -452,7 +491,12 @@ h2 {
     flex-wrap: wrap;
   }
   .nouveau {
-    right: -120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: 1050px;
+    top: 500px;
   }
   .bloc_resto {
     display: -webkit-box;
@@ -476,12 +520,10 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .recherche_bloc {
     display: -webkit-box;
@@ -525,11 +567,17 @@ h2 {
   .plat {
     width: 350px;
   }
+  .titre-resto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 50px;
+  }
   /*fin menu*/
   /*coeur*/
-  .coeur {
-    right: -50px;
-  }
   /*fin coeur */
   /*bouton commander */
   .bouton_menu {
@@ -612,6 +660,8 @@ html {
 body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 header {
@@ -624,11 +674,20 @@ a {
 }
 
 p {
-  line-height: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h3 {
   line-height: 30px;
+  font-family: roboto;
+}
+
+h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*fin base*/
@@ -660,13 +719,11 @@ h3 {
 
 h2 {
   margin-left: 10px;
-  text-transform: uppercase;
 }
 
 /*section_fonctionnement*/
 .titre_fct {
   margin-left: 10px;
-  font-size: 30px;
 }
 
 .diff_propos {
@@ -688,8 +745,27 @@ h2 {
 }
 
 .diff_propos:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: #9356DC;
+}
+
+.bloc_fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
 }
 
 .number {
@@ -705,6 +781,12 @@ h2 {
 
 /*fin section_fonctionnement*/
 /*section_restaurants*/
+.titre_restaurant {
+  position: relative;
+  margin-left: 20px;
+  bottom: -70px;
+}
+
 .titre_resto {
   font-size: 30px;
   font-family: shrikhand;
@@ -718,7 +800,7 @@ h2 {
 }
 
 .resto {
-  padding: 15px;
+  padding: 70px 15px 15px 15px;
   background-color: #f2f2f2;
   height: 100%;
 }
@@ -730,39 +812,46 @@ h2 {
   width: 100%;
 }
 
+.lien_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.descri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nouveau {
-  position: relative;
+  position: absolute;
   background-color: #99E2D0;
   padding: 9px;
   border-radius: 5px;
   width: 60px;
   color: green;
   font-family: bold;
-  margin: -180px 0 0 250px;
+  right: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.descri_resto, .descri_resto_2 {
-  margin: 130px 0 30px 0;
-  padding: 10px 0 50px 10px;
-  background-color: white;
-  font-size: 20px;
-  border-radius: 0 0 20px 20px;
-}
-
-.descri_resto, .descri_resto_2 {
-  margin-top: 130px;
-  height: 50px;
-  margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 40px;
+.descri_resto {
+  height: 60px;
+  padding-bottom: 50px;
   padding-left: 10px;
   background-color: white;
   font-size: 20px;
   border-radius: 0 0px 20px 20px;
-}
-
-.descri_resto_2 {
-  margin-top: -5px;
+  margin-top: -30px;
 }
 
 /*coeur*/
@@ -776,38 +865,71 @@ h2 {
 }
 
 .fas.fa-heart {
-  position: relative;
+  position: absolute;
   color: transparent;
+  right: 33.5px;
+  top: -1.6px;
 }
 
 .fas.fa-heart:hover {
   color: pink;
-  -webkit-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 2;
+  font-size: 35px;
 }
 
 .coeur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   position: relative;
-  right: -250px;
-  top: -65px;
+  top: -60px;
 }
 
-.coeur_2 {
-  bottom: 0;
-  right: 30px;
+.coeur_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: relative;
 }
 
-.coeur_1 {
-  right: -5px;
+.cm_1 {
+  position: relative;
+  right: 35px;
+  color: blue;
+}
+
+.cm_2 {
+  position: relative;
+  right: 0px;
+  top: 1.8px;
+}
+
+.cm_2:hover {
+  color: pink;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 2;
+  font-size: 35px;
 }
 
 /*fin coeur*/
 /*debut menu*/
 .titre_resto {
-  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 28px;
   font-family: shrikhand;
   margin-left: 20px;
 }
@@ -833,7 +955,7 @@ h2 {
   height: 100%;
   background-color: #99E2D0;
   font-size: 30px;
-  display: flex;
+  margin-right: -40px;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -844,29 +966,25 @@ h2 {
 }
 
 .descri_plat {
+  display: inline;
   height: 100%;
   width: 100%;
   background-color: white;
-  float: left;
+  font-family: roboto;
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 15px;
+  background-color: white;
+  bottom: 0;
+  margin-bottom: -50px;
+  padding-right: 10px;
+  padding-top: 60px;
 }
 
 .page_menu {
@@ -899,6 +1017,10 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.bloc h2 {
+  text-transform: uppercase;
 }
 
 /*fin plat*/

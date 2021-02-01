@@ -1,7 +1,9 @@
 /*debut menu*/
 
 .titre_resto {
-    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
     font-family: shrikhand;
     margin-left: 20px;
 }
@@ -25,35 +27,35 @@
     height: 100%;
     background-color: #99E2D0;
     font-size: 30px;
-    display: flex;
+    margin-right: -40px;
     color: white;
     align-items: center;
     justify-content: center;
 }
 
 .descri_plat {
-    
+    display: inline;
     height: 100%;
     width: 100%;
     background-color: white;
-    float: left;
+    font-family: roboto;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    
-    overflow: hidden;
     padding-left: 10px;
+    padding-right: 10px;
     
 
 }
 
 
 .prix {
-    display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-right: 15px;
+display: flex;
+background-color: white;
+bottom: 0;
+margin-bottom: -50px;
+padding-right: 10px;
+padding-top: 60px;
+
+
 }
 
 .page_menu {
@@ -78,6 +80,10 @@
     opacity: 1;
     display: flex;
     flex-direction: column;
+    
+    & h2{
+        text-transform: uppercase;
+    }
     
 }
 
