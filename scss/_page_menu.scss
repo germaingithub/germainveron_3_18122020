@@ -1,4 +1,10 @@
 /*debut menu*/
+.head_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
 
 .titre_resto {
     display: flex;

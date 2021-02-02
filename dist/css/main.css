@@ -1,8 +1,20 @@
 /*logo_start*/
 .logo_ohmyfood {
-  margin-left: 100px;
   padding: 20px 0 10px 0;
   width: 50%;
+  margin-left: 20px;
+}
+
+.log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*footer*/
@@ -13,6 +25,13 @@ footer {
   padding: 15px;
 }
 
+.titre_footer {
+  font-size: 30px;
+  font-family: 'shrikhand';
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .contact_mail {
   color: white;
 }
@@ -21,7 +40,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   font-family: 'shrikhand';
   padding-top: 20px;
   padding-left: 20px;
@@ -114,6 +132,7 @@ h2 {
   padding: 15px;
   margin: 30px;
   border: none;
+  text-align: center;
 }
 
 .bouton_debut:hover, .bouton_menu:hover {
@@ -121,12 +140,35 @@ h2 {
 }
 
 .bouton_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 50px 10px 50px;
-  margin-left: 80px;
+  text-align: center;
 }
 
 .bouton_menu:hover {
   opacity: 0.8;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  top: 0;
 }
 
 /*fin bouton commander + explorer*/
@@ -204,21 +246,21 @@ h2 {
           animation-name: fadein 1s;
 }
 
-.plat:hover .descri_plat {
+.plat:active .descri_plat {
   width: 70%;
   -webkit-animation-timing-function: 1s;
           animation-timing-function: 1s;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  min-width: 250px;
+  min-width: 200px;
 }
 
-.plat:hover .fas.fa-check-circle {
+.plat:active .fas.fa-check-circle {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.plat:hover .check {
+.plat:active .check {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -226,8 +268,6 @@ h2 {
   width: 100%;
   -webkit-animation: fadein 1s;
           animation: fadein 1s;
-  -webkit-transform: scalex(1);
-          transform: scalex(1);
 }
 
 @-webkit-keyframes fadein {
@@ -312,30 +352,35 @@ h2 {
   -webkit-animation: load 1s ease-in-out infinite;
           animation: load 1s ease-in-out infinite;
   background-color: #9356DC;
+  border-radius: 100px;
 }
 
 #loader_1 span:nth-child(2) {
   -webkit-animation: load 1s ease-in-out 0.15s infinite;
           animation: load 1s ease-in-out 0.15s infinite;
   background-color: #FF79DA;
+  border-radius: 100px;
 }
 
 #loader_1 span:nth-child(3) {
   -webkit-animation: load 1s ease-in-out 0.30s infinite;
           animation: load 1s ease-in-out 0.30s infinite;
   background-color: #9356DC;
+  border-radius: 100px;
 }
 
 #loader_1 span:nth-child(4) {
   -webkit-animation: load 1s ease-in-out 0.50s infinite;
           animation: load 1s ease-in-out 0.50s infinite;
   background-color: #FF79DA;
+  border-radius: 100px;
 }
 
 #loader_1 span:nth-child(5) {
   -webkit-animation: load 1s ease-in-out 0.70s infinite;
           animation: load 1s ease-in-out 0.70s infinite;
   background-color: #9356DC;
+  border-radius: 100px;
 }
 
 @-webkit-keyframes load {
@@ -395,13 +440,6 @@ h2 {
   transition: visibility 3s;
 }
 
-.titre_footer {
-  font-size: 30px;
-  font-family: 'shrikhand';
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 @media screen and (min-width: 1001px) {
   /*base*/
   #home {
@@ -420,20 +458,28 @@ h2 {
     margin: 0 auto;
   }
   /*fin base*/
-  .descri_plat:hover {
+  .plat:hover .descri_plat {
     width: 70%;
     -webkit-animation-timing-function: 1s;
             animation-timing-function: 1s;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    max-width: 250px;
+    min-width: 200px;
   }
-  .descri_plat:hover.fas.fa-check-circle {
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 1;
+  .plat:hover .fas.fa-check-circle {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .plat:hover .check {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    width: 100%;
+    -webkit-animation: fadein 1s;
+            animation: fadein 1s;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
   }
   /*footer*/
   footer {
@@ -446,7 +492,7 @@ h2 {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    font-size: 25px;
+    font-size: 20px;
     max-width: 1300px;
     margin-left: 10px;
   }
@@ -454,21 +500,17 @@ h2 {
     max-width: 1320px;
     margin-left: 0;
   }
-  .mention {
-    margin-top: -15px;
-    padding-left: 10px;
+  .footer_part {
+    margin-top: 20px;
   }
-  .contact {
-    margin-top: -15px;
-  }
-  .titre_footer {
-    font-size-adjust: 10px;
-    margin-top: -10px;
+  .footer_rest {
+    margin-top: 20px;
   }
   .titre_restaurant {
     position: relative;
-    top: 90px;
+    top: 50px;
     margin-left: 50px;
+    font-size: 30px;
   }
   /*fin footer*/
   /*homepage_resto*/
@@ -486,17 +528,13 @@ h2 {
             justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 50px;
+    margin-top: -50px;
     max-width: 1350px;
     flex-wrap: wrap;
   }
   .nouveau {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     position: relative;
-    left: 1050px;
-    top: 500px;
+    right: 0;
   }
   .bloc_resto {
     display: -webkit-box;
@@ -509,6 +547,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: relative;
     min-width: 470px;
     margin-right: 30px;
     margin-top: 30px;
@@ -516,6 +555,9 @@ h2 {
   }
   /*fin homepage_resto*/
   /*fonctionnement*/
+  .titre_fct {
+    font-size: 30px;
+  }
   .bloc_fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -576,6 +618,12 @@ h2 {
             justify-content: space-between;
     margin-right: 50px;
   }
+  .coeur_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+  }
   /*fin menu*/
   /*coeur*/
   /*fin coeur */
@@ -589,7 +637,7 @@ h2 {
   /*fin bouton commander */
 }
 
-@media screen and (min-width: 750px) and (max-width: 999px) {
+@media screen and (min-width: 609px) and (max-width: 999px) {
   /*base*/
   .logo_ohmyfood {
     max-width: 300px;
@@ -621,6 +669,29 @@ h2 {
             justify-content: center;
   }
   /*focntionnement*/
+  .plat:hover .descri_plat {
+    width: 80%;
+    -webkit-animation-timing-function: 1s;
+            animation-timing-function: 1s;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    min-width: 400px;
+  }
+  .plat:hover .fas.fa-check-circle {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .plat:hover .check {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    width: 100%;
+    -webkit-animation: fadein 1s;
+            animation: fadein 1s;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
   /*footer*/
   footer {
     display: -webkit-box;
@@ -691,20 +762,6 @@ h4 {
 }
 
 /*fin base*/
-.head_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin-right: 100px;
-}
-
 .decr {
   color: grey;
   margin-left: 10px;
@@ -912,7 +969,7 @@ h2 {
   top: 1.8px;
 }
 
-.cm_2:hover {
+.cm_2:active {
   color: pink;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
@@ -922,6 +979,22 @@ h2 {
 
 /*fin coeur*/
 /*debut menu*/
+.head_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .titre_resto {
   display: -webkit-box;
   display: -ms-flexbox;

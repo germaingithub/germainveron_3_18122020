@@ -54,12 +54,13 @@
 
  .plat {
     animation-name: fadein 1s;
-     &:hover{
-     &  .descri_plat{width: 70%;
+     &:active{
+     &  .descri_plat{
+    width: 70%;
      animation-timing-function: 1s;
       transition:  0.5s ease-in-out;
     
-      min-width: 250px;
+      min-width: 200px;
   
      
      
@@ -74,7 +75,7 @@
          margin-right: 0px;
             width: 100%;
             animation: fadein 1s;
-    transform: scalex(1);
+   
      }
     }
  }
@@ -128,26 +129,31 @@
 #loader_1 span:nth-child(1) {
     animation: load 1s ease-in-out infinite;
     background-color: $primary-color;
+    border-radius: 100px;
 }
 
 #loader_1 span:nth-child(2) {
     animation: load 1s ease-in-out 0.15s infinite;
     background-color: $secondary-color;
+   border-radius: 100px;
 }
 
 #loader_1 span:nth-child(3) {
     animation: load 1s ease-in-out 0.30s infinite;
     background-color: $primary-color;
+    border-radius: 100px;
 }
 
 #loader_1 span:nth-child(4) {
     animation: load 1s ease-in-out 0.50s infinite;
     background-color: $secondary-color;
+   border-radius: 100px;
 }
 
 #loader_1 span:nth-child(5) {
     animation: load 1s ease-in-out 0.70s infinite;
     background-color: $primary-color;
+    border-radius: 100px;
 }
 
 @keyframes load {
@@ -184,10 +190,5 @@
     transition: visibility 3s;
 }
 
-.titre_footer {
-    font-size: 30px;
-    font-family: 'shrikhand';
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 

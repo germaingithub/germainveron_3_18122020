@@ -1,9 +1,16 @@
 
 /*logo_start*/
 .logo_ohmyfood {
-    margin-left: 100px;
+  
     padding: 20px 0 10px 0;
     width: 50%;
+    margin-left: 20px;
+    
+}
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*footer*/
@@ -13,14 +20,18 @@ footer {
     color: $white-color;
     padding: 15px;
 }
-
+.titre_footer {
+    font-size: 30px;
+    font-family: 'shrikhand';
+    margin-right: 10px;
+    margin-left: 10px;
+}
 .contact_mail {
     color:$white-color;
 }
 
     .titre_footer {
         display: flex;
-        font-size: 20px;
         font-family: 'shrikhand';
         padding-top: 20px;
         padding-left: 20px;
@@ -91,17 +102,29 @@ h2 {
     padding: 15px;
     margin: 30px;
     border: none; 
+    text-align: center;
     &:hover{
         opacity: 0.8;
     }
 }
 
 .bouton_menu {
-    @extend .bouton_debut;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     padding: 10px 50px 10px 50px;
-    margin-left: 80px;
+    text-align: center;
+     @extend .bouton_debut;
     &:hover{
         opacity: 0.8;
     }
 }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      background-color: $back-color;
+      top: 0;
+}
+
 /*fin bouton commander + explorer*/

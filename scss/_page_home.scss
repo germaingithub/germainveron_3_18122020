@@ -41,12 +41,7 @@ h4{
 /*fin base*/
 
 
-.head_menu {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-right: 100px;
-}
+
 
 .decr {
     color: grey;
@@ -223,7 +218,7 @@ position: relative;
 
 }
 
-.cm_2:hover {
+.cm_2:active {
     @include coeuranim;
     z-index: 2;
     font-size: 35px;
