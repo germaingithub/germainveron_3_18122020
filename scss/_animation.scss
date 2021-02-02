@@ -1,37 +1,40 @@
-.delay-0 {
+.delay-0.plat{
     animation-delay: 0s;
 }
 
-.delay-1 {
+.delay-1.plat {
     animation-delay: .1s;
 }
 
-.delay-2 {
+.delay-2.plat {
     animation-delay: .2s;
 }
 
-.delay-3.descri_plat {
+.delay-3.plat {
     animation-delay: .3s;
 }
 
-.delay-4.descri_plat {
+.delay-4.plat {
     animation-delay: .4s;
 }
 
-.delay-5.descri_plat {
+.delay-5.plat {
     animation-delay: .5s;
 }
 
-.delay-6.descri_plat {
+.delay-6.plat {
     animation-delay: .6s;
 }
 
-.delay-7.descri_plat {
+.delay-7.plat {
     animation-delay: .7s;
 }
 
-.delay-8.descri_plat {
+.delay-8.plat {
     animation-delay: .8s;
+}
+.delay-9.plat {
+    animation-delay: .9s;
 }
 
 /*animation_validation*/
@@ -47,13 +50,17 @@
     width: 100%;
     min-height: 90px;
     border-radius: 20px;
-    box-shadow:0px 0px 20px #0000002e;
+   box-shadow: 0px 0px 20px #cdcfba;
     overflow: hidden;
+    animation: fadein;
+    animation-fill-mode: both;
+    
+    
 
 }
 
  .plat {
-    animation-name: fadein 1s;
+
      &:active{
      &  .descri_plat{
     width: 70%;
@@ -74,6 +81,7 @@
          justify-content: center;
          margin-right: 0px;
             width: 100%;
+            height: 100px;
             animation: fadein 1s;
    
      }

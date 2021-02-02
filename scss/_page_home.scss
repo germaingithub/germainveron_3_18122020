@@ -24,6 +24,7 @@ p {
     white-space: nowrap;
     overflow: hidden;
      text-overflow: ellipsis;
+     margin: 0;
     
     
    
@@ -37,6 +38,7 @@ h4{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
 /*fin base*/
 
@@ -78,7 +80,7 @@ h2 {
     padding-right: 30px;
     box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
 
-    &:hover {
+    &:active {
         opacity: 0.8;
         background-color: $primary-color;
     }
@@ -158,14 +160,16 @@ h2 {
 
 .descri_resto {
     height: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-left: 10px;
     background-color: $white-color;
     font-size: 20px;
     border-radius: 0 0px 20px 20px; 
     margin-top: -30px;
 }
-
+.bloc_resto{
+    margin-bottom: 10px;
+}
 /*coeur*/
 .far.fa-heart {
     position: relative;
@@ -193,9 +197,8 @@ h2 {
 .coeur{
  
  display: flex;
-justify-content: right;
-position: relative;
- top: -60px;
+position: absolute;
+right: 0;
 }
 .coeur_menu{
     display: flex;

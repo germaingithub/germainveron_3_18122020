@@ -22,14 +22,13 @@ footer {
   position: relative;
   background-color: #333131;
   color: white;
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
 }
 
 .titre_footer {
   font-size: 30px;
   font-family: 'shrikhand';
   margin-right: 10px;
-  margin-left: 10px;
 }
 
 .contact_mail {
@@ -42,7 +41,6 @@ footer {
   display: flex;
   font-family: 'shrikhand';
   padding-top: 20px;
-  padding-left: 20px;
   padding-bottom: 15px;
 }
 
@@ -61,6 +59,14 @@ footer {
 .footer_partenaire {
   display: inline;
   padding-left: 5px;
+}
+
+.mention_part {
+  margin-top: 20px;
+}
+
+.contact_part {
+  margin-top: 20px;
 }
 
 /*fin de footer*/
@@ -151,6 +157,8 @@ h2 {
           align-items: center;
   padding: 10px 50px 10px 50px;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 20px #cdcfba;
+          box-shadow: 0px 0px 20px #cdcfba;
 }
 
 .bouton_menu:hover {
@@ -172,49 +180,54 @@ h2 {
 }
 
 /*fin bouton commander + explorer*/
-.delay-0 {
+.delay-0.plat {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-.delay-1 {
+.delay-1.plat {
   -webkit-animation-delay: .1s;
           animation-delay: .1s;
 }
 
-.delay-2 {
+.delay-2.plat {
   -webkit-animation-delay: .2s;
           animation-delay: .2s;
 }
 
-.delay-3.descri_plat {
+.delay-3.plat {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
-.delay-4.descri_plat {
+.delay-4.plat {
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }
 
-.delay-5.descri_plat {
+.delay-5.plat {
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
 }
 
-.delay-6.descri_plat {
+.delay-6.plat {
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
 }
 
-.delay-7.descri_plat {
+.delay-7.plat {
   -webkit-animation-delay: .7s;
           animation-delay: .7s;
 }
 
-.delay-8.descri_plat {
+.delay-8.plat {
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
+}
+
+.delay-9.plat {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 /*animation_validation*/
@@ -236,14 +249,13 @@ h2 {
   width: 100%;
   min-height: 90px;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 20px #0000002e;
-          box-shadow: 0px 0px 20px #0000002e;
+  -webkit-box-shadow: 0px 0px 20px #cdcfba;
+          box-shadow: 0px 0px 20px #cdcfba;
   overflow: hidden;
-}
-
-.plat {
-  -webkit-animation-name: fadein 1s;
-          animation-name: fadein 1s;
+  -webkit-animation: fadein;
+          animation: fadein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .plat:active .descri_plat {
@@ -266,6 +278,7 @@ h2 {
           justify-content: center;
   margin-right: 0px;
   width: 100%;
+  height: 100px;
   -webkit-animation: fadein 1s;
           animation: fadein 1s;
 }
@@ -440,7 +453,7 @@ h2 {
   transition: visibility 3s;
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1070px) {
   /*base*/
   #home {
     max-width: 1350px;
@@ -567,6 +580,27 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .diff_propos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 0 20px 40px;
+    width: 280px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: #d1d1d1 3px 3px 3px 3px;
+            box-shadow: #d1d1d1 3px 3px 3px 3px;
+  }
+  .diff_propos:hover {
+    opacity: 0.8;
+    background-color: #9356DC;
+  }
   .recherche_bloc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -637,7 +671,7 @@ h2 {
   /*fin bouton commander */
 }
 
-@media screen and (min-width: 609px) and (max-width: 999px) {
+@media screen and (min-width: 609px) and (max-width: 1069px) {
   /*base*/
   .logo_ohmyfood {
     max-width: 300px;
@@ -687,10 +721,32 @@ h2 {
             justify-content: center;
     margin-right: 0px;
     width: 100%;
+    height: 100px;
     -webkit-animation: fadein 1s;
             animation: fadein 1s;
     -webkit-transform: scalex(1);
             transform: scalex(1);
+  }
+  .diff_propos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 0 20px 40px;
+    width: 280px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: #d1d1d1 3px 3px 3px 3px;
+            box-shadow: #d1d1d1 3px 3px 3px 3px;
+  }
+  .diff_propos:hover {
+    opacity: 0.8;
+    background-color: #9356DC;
   }
   /*footer*/
   footer {
@@ -720,6 +776,12 @@ h2 {
   .titre_footer {
     margin-top: -20px;
   }
+  .mention_part {
+    margin-top: 10px;
+  }
+  .contact_part {
+    margin-top: 10px;
+  }
   /*fin footer*/
 }
 
@@ -748,6 +810,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 h3 {
@@ -801,7 +864,7 @@ h2 {
           box-shadow: #d1d1d1 3px 3px 3px 3px;
 }
 
-.diff_propos:hover {
+.diff_propos:active {
   opacity: 0.8;
   background-color: #9356DC;
 }
@@ -903,12 +966,16 @@ h2 {
 
 .descri_resto {
   height: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-left: 10px;
   background-color: white;
   font-size: 20px;
   border-radius: 0 0px 20px 20px;
   margin-top: -30px;
+}
+
+.bloc_resto {
+  margin-bottom: 10px;
 }
 
 /*coeur*/
@@ -940,11 +1007,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  position: relative;
-  top: -60px;
+  position: absolute;
+  right: 0;
 }
 
 .coeur_menu {
@@ -1068,6 +1132,10 @@ h2 {
   width: 100%;
   background-color: #F4F4F4;
   padding-top: 15px;
+}
+
+.nom_resto {
+  margin: 15px 0 5px 0;
 }
 
 .bloc {

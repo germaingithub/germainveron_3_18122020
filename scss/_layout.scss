@@ -18,13 +18,13 @@ footer {
     position: relative;
     background-color: $black-color;
     color: $white-color;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
 }
 .titre_footer {
     font-size: 30px;
     font-family: 'shrikhand';
     margin-right: 10px;
-    margin-left: 10px;
+   
 }
 .contact_mail {
     color:$white-color;
@@ -34,7 +34,6 @@ footer {
         display: flex;
         font-family: 'shrikhand';
         padding-top: 20px;
-        padding-left: 20px;
         padding-bottom: 15px;     
     }
     .list_footer {
@@ -47,6 +46,12 @@ footer {
     .footer_partenaire {
         display: inline;
         padding-left: 5px;
+    }
+    .mention_part{
+        margin-top: 20px;
+    }
+    .contact_part{
+        margin-top: 20px;
     }
 /*fin de footer*/
 
@@ -114,6 +119,7 @@ h2 {
    align-items: center;
     padding: 10px 50px 10px 50px;
     text-align: center;
+    box-shadow: 0px 0px 20px #cdcfba;
      @extend .bouton_debut;
     &:hover{
         opacity: 0.8;

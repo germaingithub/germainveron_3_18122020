@@ -1,4 +1,4 @@
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1070px) {
     /*base*/
     #home {
         max-width: 1350px;
@@ -116,7 +116,22 @@
         display: flex;
         flex-direction: row;
     }
+.diff_propos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 20px 40px;
+    width: 280px;
+    background-color: $back-color;
+    border-radius: 30px;
+    padding-right: 30px;
+    box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
 
+    &:hover {
+        opacity: 0.8;
+        background-color: $primary-color;
+    }
+}
     .recherche_bloc {
         display: flex;
         justify-content: center;
@@ -173,7 +188,7 @@
 
 
 
-@media screen and (min-width :609px) and (max-width : 999px) {
+@media screen and (min-width :609px) and (max-width : 1069px) {
      /*base*/
     .logo_ohmyfood {
         max-width: 300px;
@@ -221,9 +236,26 @@
             justify-content: center;
             margin-right: 0px;
             width: 100%;
+            height: 100px;
             animation: fadein 1s;
             transform: scalex(1);
         }
+    }
+}
+.diff_propos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 20px 40px;
+    width: 280px;
+    background-color: $back-color;
+    border-radius: 30px;
+    padding-right: 30px;
+    box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+
+    &:hover {
+        opacity: 0.8;
+        background-color: $primary-color;
     }
 }
  /*footer*/
@@ -253,6 +285,13 @@
     .titre_footer {
         margin-top: -20px;
     }
+      .mention_part {
+          margin-top: 10px;
+      }
+
+      .contact_part {
+          margin-top: 10px;
+      }
    
      /*fin footer*/
 
