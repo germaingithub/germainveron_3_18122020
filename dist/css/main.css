@@ -139,7 +139,7 @@ h2 {
   text-align: center;
 }
 
-.bouton_debut:hover, .bouton_menu:hover {
+.bouton_debut:active, .bouton_menu:active {
   opacity: 0.8;
 }
 
@@ -482,6 +482,20 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .bouton_debut, .bouton_menu {
+    background: linear-gradient(200deg, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    max-width: 300px;
+    padding: 15px;
+    margin: 30px;
+    border: none;
+    text-align: center;
+  }
+  .bouton_debut:hover, .bouton_menu:hover {
+    opacity: 0.8;
+  }
   .mention {
     padding-top: 20px;
   }
@@ -664,6 +678,20 @@ h2 {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .bouton_debut, .bouton_menu {
+    background: linear-gradient(200deg, #FF79DA 0%, #9356DC 100%);
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    max-width: 300px;
+    padding: 15px;
+    margin: 30px;
+    border: none;
+    text-align: center;
+  }
+  .bouton_debut:hover, .bouton_menu:hover {
+    opacity: 0.8;
   }
   .recherche_bloc {
     display: -webkit-box;
