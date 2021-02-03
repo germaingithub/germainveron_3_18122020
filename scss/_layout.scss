@@ -1,13 +1,11 @@
-
 /*logo_start*/
 .logo_ohmyfood {
-  
     padding: 20px 0 10px 0;
     width: 50%;
     margin-left: 20px;
-    
 }
-.log{
+
+.log {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,46 +18,51 @@ footer {
     color: $white-color;
     padding: 0px 15px 15px 15px;
 }
+
 .titre_footer {
     font-size: 30px;
     font-family: 'shrikhand';
     margin-right: 10px;
-   
 }
+
 .contact_mail {
-    color:$white-color;
+    color: $white-color;
 }
 
-    .titre_footer {
-        display: flex;
-        font-family: 'shrikhand';
-        padding-top: 20px;
-        padding-bottom: 15px;     
-    }
-    .list_footer {
-        flex-direction: column;
-    }
-    .footer_restaurant {
-        display: inline;
-        padding-left: 12px;
-    }
-    .footer_partenaire {
-        display: inline;
-        padding-left: 5px;
-    }
-    .mention_part{
-        margin-top: 20px;
-    }
-    .contact_part{
-        margin-top: 20px;
-    }
-/*fin de footer*/
+.titre_footer {
+    display: flex;
+    font-family: 'shrikhand';
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
 
+.list_footer {
+    flex-direction: column;
+}
+
+.footer_restaurant {
+    display: inline;
+    padding-left: 12px;
+}
+
+.footer_partenaire {
+    display: inline;
+    padding-left: 5px;
+}
+
+.mention_part {
+    margin-top: 20px;
+}
+
+.contact_part {
+    margin-top: 20px;
+}
 /*trai_titre*/
 .trait {
     border-bottom: solid $tertiary-color;
     width: 10%;
 }
+
 h2 {
     margin-left: 10px;
     @extend .trait;
@@ -69,6 +72,7 @@ h2 {
 .recherche {
     text-align: center;
 }
+
 .zone_recherche {
     display: inline;
     background-color: #e6e6e6;
@@ -79,6 +83,7 @@ h2 {
     font-weight: 500;
     font-size: 15px;
 }
+
 .rchr {
     display: flex;
     align-items: center;
@@ -86,16 +91,17 @@ h2 {
     background-color: #e6e6e6;
     border-top: solid 2px grey;
 }
+
 .fas.fa-map-marker-alt {
     margin-left: 50px;
 }
+
 .recherche_bloc {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: $back-color;
 }
-/*fin bouton recherche*/
 
 /*bouton commander + explorer*/
 .bouton_debut {
@@ -106,31 +112,30 @@ h2 {
     max-width: 300px;
     padding: 15px;
     margin: 30px;
-    border: none; 
+    border: none;
     text-align: center;
-    &:hover{
+    &:hover {
         opacity: 0.8;
     }
 }
 
 .bouton_menu {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 50px 10px 50px;
     text-align: center;
     box-shadow: 0px 0px 20px #cdcfba;
-     @extend .bouton_debut;
-    &:hover{
+    @extend .bouton_debut;
+    &:hover {
         opacity: 0.8;
     }
 }
-    .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      background-color: $back-color;
-      top: 0;
-}
 
-/*fin bouton commander + explorer*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $back-color;
+    top: 0;
+}

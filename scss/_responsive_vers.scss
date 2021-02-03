@@ -1,4 +1,5 @@
 @media screen and (min-width: 1070px) {
+
     /*base*/
     #home {
         max-width: 1350px;
@@ -12,45 +13,42 @@
 
     .logo_ohmyfood {
         max-width: 300px;
-             
     }
-        .body {
-            width: 1200px;
-            margin: 0 auto;
-        }
-        /*fin base*/
+
+    .body {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*fin base*/
     .plat {
        
-
         &:hover {
             & .descri_plat {
                 width: 70%;
                 animation-timing-function: 1s;
                 transition: 0.5s ease-in-out;
-                min-width:200px;
-
-
-
+                min-width: 200px;
+                max-width: 220px;
             }
 
             & .fas.fa-check-circle {
-
                 transform: rotate(0deg);
             }
 
             & .check {
-
                 justify-content: center;
                 margin-right: 0px;
                 width: 100%;
                 animation: fadein 1s;
                 transform: scalex(1);
+             
             }
         }
     }
+
     /*footer*/
     footer {
-
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -59,16 +57,26 @@
         margin-left: 10px;
     }
 
+    .mention {
+        margin-top: 20px;
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+
     .footer_menu {
         max-width: 1320px;
         margin-left: 0;
     }
-.footer_part {
-    margin-top: 20px;
-}
-.footer_rest{
-    margin-top: 20px;
-}
+
+    .footer_part {
+        margin-top: 20px;
+    }
+
+    .footer_rest {
+        margin-top: 20px;
+    }
 
     .titre_restaurant {
         position: relative;
@@ -76,10 +84,9 @@
         margin-left: 50px;
         font-size: 30px;
     }
-    /*fin footer*/
+
     /*homepage_resto*/
     .resto {
-        
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -90,13 +97,11 @@
         max-width: 1350px;
         flex-wrap: wrap;
     }
-    .nouveau{
+
+    .nouveau {
         position: relative;
         right: 0;
     }
-
-
-
     .bloc_resto {
         display: flex;
         flex-direction: column;
@@ -107,41 +112,37 @@
         margin-top: 30px;
         margin-left: 10px;
     }
-      /*fin homepage_resto*/
-  /*fonctionnement*/
-  .titre_fct{
-      font-size: 30px;
-  }
+
+    /*fonctionnement*/
+    .titre_fct {
+        font-size: 30px;
+    }
+
     .bloc_fonctionnement {
         display: flex;
         flex-direction: row;
     }
-.diff_propos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 0 20px 40px;
-    width: 280px;
-    background-color: $back-color;
-    border-radius: 30px;
-    padding-right: 30px;
-    box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
 
-    &:hover {
-        opacity: 0.8;
-        background-color: $primary-color;
+    .diff_propos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0 20px 40px;
+        width: 280px;
+        background-color: $back-color;
+        border-radius: 30px;
+        padding-right: 30px;
+        box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+        &:hover {
+            opacity: 0.8;
+            background-color: $primary-color;
+        }
     }
-}
     .recherche_bloc {
         display: flex;
         justify-content: center;
     }
-    /*fin fonctionnement*/
-
-
-
     /*menu*/
-    
     .page_menu {
         display: flex;
         justify-content: center;
@@ -149,11 +150,10 @@
         flex-direction: column;
         max-width: 1350px;
     }
-
     .menu_resto {
         gap: 50px;
         flex-direction: row;
-         display: flex;
+        display: flex;
         flex-wrap: wrap;
         margin-left: 80px;
     }
@@ -161,43 +161,33 @@
     .plat {
         width: 350px;
     }
-    .titre-resto{
+
+    .titre-resto {
         display: flex;
         justify-content: space-between;
         margin-right: 50px;
     }
-    .coeur_menu{
+
+    .coeur_menu {
         display: flex;
         margin-left: 50px;
     }
- /*fin menu*/
-
-    /*coeur*/
-   
-    /*fin coeur */
-
     /*bouton commander */
     .bouton_menu {
         width: 1000px;
         align-items: center;
     }
-
-    /*fin bouton commander */
 }
-
-
-
-
 @media screen and (min-width :609px) and (max-width : 1069px) {
-     /*base*/
+
+    /*base*/
     .logo_ohmyfood {
         max-width: 300px;
     }
-
- /*fin base*/
     .nouveau {
         right: -350px;
     }
+
     /*fonctionnement*/
     .bloc_fonctionnement {
         display: flex;
@@ -210,55 +200,45 @@
         display: flex;
         justify-content: center;
     }
+    .plat {
+        &:hover {
+            & .descri_plat {
+                width: 80%;
+                animation-timing-function: 1s;
+                transition: 0.5s ease-in-out;
+                min-width: 400px;
+            }
 
-    /*focntionnement*/
-.plat {
-
-
-    &:hover {
-        & .descri_plat {
-            width: 80%;
-            animation-timing-function: 1s;
-            transition: 0.5s ease-in-out;
-            min-width: 400px;
-
-
-
-        }
-
-        & .fas.fa-check-circle {
-
-            transform: rotate(0deg);
-        }
-
-        & .check {
-
-            justify-content: center;
-            margin-right: 0px;
-            width: 100%;
-            height: 100px;
-            animation: fadein 1s;
-            transform: scalex(1);
+            & .fas.fa-check-circle {
+                transform: rotate(0deg);
+            }
+            & .check {
+                justify-content: center;
+                margin-right: 0px;
+                width: 100%;
+                height: 100px;
+                animation: fadein 1s;
+                transform: scalex(1);
+            }
         }
     }
-}
-.diff_propos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 0 20px 40px;
-    width: 280px;
-    background-color: $back-color;
-    border-radius: 30px;
-    padding-right: 30px;
-    box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
-
-    &:hover {
-        opacity: 0.8;
-        background-color: $primary-color;
+    .diff_propos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0 20px 40px;
+        width: 280px;
+        background-color: $back-color;
+        border-radius: 30px;
+        padding-right: 30px;
+        box-shadow: rgb(216, 211, 211) 3px;
+        &:hover {
+            opacity: 0.8;
+            background-color: $primary-color;
+        }
     }
-}
- /*footer*/
+
+    /*footer*/
     footer {
         display: flex;
         flex-direction: row;
@@ -268,7 +248,6 @@
     }
 
     .footer_menu {
-
         bottom: 0;
         max-width: 1320px;
         margin-left: 0;
@@ -285,15 +264,10 @@
     .titre_footer {
         margin-top: -20px;
     }
-      .mention_part {
-          margin-top: 10px;
-      }
-
-      .contact_part {
-          margin-top: 10px;
-      }
-   
-     /*fin footer*/
-
-
+    .mention {
+        margin-top: 10px;
+    }
+    .contact {
+        margin-top: 10px;
+    }
 }

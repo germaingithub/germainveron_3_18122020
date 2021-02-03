@@ -23,27 +23,20 @@ p {
 
     white-space: nowrap;
     overflow: hidden;
-     text-overflow: ellipsis;
-     margin: 0;
-    
-    
-   
+    text-overflow: ellipsis;
+    margin: 0;
 }
 
 h3 {
     line-height: 30px;
     font-family: roboto;
 }
-h4{
+
+h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
-/*fin base*/
-
-
-
 
 .decr {
     color: grey;
@@ -57,16 +50,9 @@ h4{
     margin-right: 30px;
 }
 
-h2 {
-    margin-left: 10px;
-    @extend .trait;
-   
-}
-
 /*section_fonctionnement*/
 .titre_fct {
     margin-left: 10px;
-    
 }
 
 .diff_propos {
@@ -85,7 +71,8 @@ h2 {
         background-color: $primary-color;
     }
 }
-.bloc_fonctionnement{
+
+.bloc_fonctionnement {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,6 +80,7 @@ h2 {
     justify-content: center;
     margin-right: 20px;
 }
+
 .number {
     background-color: $primary-color;
     color: $white-color;
@@ -103,19 +91,17 @@ h2 {
     margin-left: -20px;
     font-size: 22px;
 }
-/*fin section_fonctionnement*/
 
 /*section_restaurants*/
-.titre_restaurant{
+.titre_restaurant {
     position: relative;
     margin-left: 20px;
     bottom: -70px;
-
 }
+
 .titre_resto {
     font-size: 30px;
     font-family: shrikhand;
-
 }
 
 .logo_rest {
@@ -123,6 +109,7 @@ h2 {
     object-fit: cover;
     height: 250px;
 }
+
 .resto {
     padding: 70px 15px 15px 15px;
     background-color: $back-color;
@@ -134,16 +121,17 @@ h2 {
     object-fit: cover;
     width: 100%;
 }
-.lien_restaurant{
+
+.lien_restaurant {
     display: flex;
 }
 
-.descri{
+.descri {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
 }
+
 .nouveau {
     position: absolute;
     background-color: $tertiary-color;
@@ -155,7 +143,6 @@ h2 {
     right: 15px;
     margin-top: 10px;
     margin-right: 10px;
-  
 }
 
 .descri_resto {
@@ -164,43 +151,44 @@ h2 {
     padding-left: 10px;
     background-color: $white-color;
     font-size: 20px;
-    border-radius: 0 0px 20px 20px; 
+    border-radius: 0 0px 20px 20px;
     margin-top: -30px;
 }
-.bloc_resto{
+
+.bloc_resto {
     margin-bottom: 10px;
 }
+
 /*coeur*/
 .far.fa-heart {
     position: relative;
-   left: -35px;
+    left: -35px;
 }
-.far.fa-heart:hover{
+
+.far.fa-heart:hover {
     display: none;
-  
 }
 
 .fas.fa-heart {
     position: absolute;
-    color:transparent; 
+    color: transparent;
     right: 33.5px;
     top: -1.6px;
-    
 }
-.fas.fa-heart:hover {
-      @include coeuranim;
-      z-index: 2;
-      font-size:35px ;
-     
 
+.fas.fa-heart:hover {
+    @include coeuranim;
+    z-index: 2;
+    font-size: 35px;
 }
-.coeur{
- 
- display: flex;
-position: absolute;
-right: 0;
+
+.coeur {
+    display: flex;
+    position: absolute;
+    right: 0;
 }
-.coeur_menu{
+
+.coeur_menu {
     display: flex;
     justify-content: right;
     position: relative;
@@ -212,22 +200,15 @@ right: 0;
     color: blue;
 }
 
-
-
 .cm_2 {
     position: relative;
     right: 0px;
     top: 1.8px;
-
 }
 
-.cm_2:active {
+.cm_2:hover {
     @include coeuranim;
     z-index: 2;
     font-size: 35px;
-    
-
 }
-/*fin coeur*/
-
 

@@ -69,7 +69,6 @@ footer {
   margin-top: 20px;
 }
 
-/*fin de footer*/
 /*trai_titre*/
 .trait, h2 {
   border-bottom: solid #99E2D0;
@@ -127,7 +126,6 @@ h2 {
   background-color: #f2f2f2;
 }
 
-/*fin bouton recherche*/
 /*bouton commander + explorer*/
 .bouton_debut, .bouton_menu {
   background: linear-gradient(200deg, #FF79DA 0%, #9356DC 100%);
@@ -179,7 +177,6 @@ h2 {
   top: 0;
 }
 
-/*fin bouton commander + explorer*/
 .delay-0.plat {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
@@ -231,33 +228,6 @@ h2 {
 }
 
 /*animation_validation*/
-.fas.fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-}
-
-.plat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  cursor: pointer;
-  width: 100%;
-  min-height: 90px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 20px #cdcfba;
-          box-shadow: 0px 0px 20px #cdcfba;
-  overflow: hidden;
-  -webkit-animation: fadein;
-          animation: fadein;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 .plat:active .descri_plat {
   width: 70%;
   -webkit-animation-timing-function: 1s;
@@ -437,6 +407,7 @@ h2 {
   bottom: 0;
   width: 100%;
   height: 100%;
+  padding-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +449,7 @@ h2 {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     min-width: 200px;
+    max-width: 220px;
   }
   .plat:hover .fas.fa-check-circle {
     -webkit-transform: rotate(0deg);
@@ -509,6 +481,12 @@ h2 {
     max-width: 1300px;
     margin-left: 10px;
   }
+  .mention {
+    margin-top: 20px;
+  }
+  .contact {
+    margin-top: 20px;
+  }
   .footer_menu {
     max-width: 1320px;
     margin-left: 0;
@@ -525,7 +503,6 @@ h2 {
     margin-left: 50px;
     font-size: 30px;
   }
-  /*fin footer*/
   /*homepage_resto*/
   .resto {
     display: -webkit-box;
@@ -566,7 +543,6 @@ h2 {
     margin-top: 30px;
     margin-left: 10px;
   }
-  /*fin homepage_resto*/
   /*fonctionnement*/
   .titre_fct {
     font-size: 30px;
@@ -609,7 +585,6 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /*fin fonctionnement*/
   /*menu*/
   .page_menu {
     display: -webkit-box;
@@ -658,9 +633,6 @@ h2 {
     display: flex;
     margin-left: 50px;
   }
-  /*fin menu*/
-  /*coeur*/
-  /*fin coeur */
   /*bouton commander */
   .bouton_menu {
     width: 1000px;
@@ -668,7 +640,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
   }
-  /*fin bouton commander */
 }
 
 @media screen and (min-width: 609px) and (max-width: 1069px) {
@@ -676,7 +647,6 @@ h2 {
   .logo_ohmyfood {
     max-width: 300px;
   }
-  /*fin base*/
   .nouveau {
     right: -350px;
   }
@@ -702,7 +672,6 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /*focntionnement*/
   .plat:hover .descri_plat {
     width: 80%;
     -webkit-animation-timing-function: 1s;
@@ -741,8 +710,8 @@ h2 {
     background-color: #f2f2f2;
     border-radius: 30px;
     padding-right: 30px;
-    -webkit-box-shadow: #d1d1d1 3px 3px 3px 3px;
-            box-shadow: #d1d1d1 3px 3px 3px 3px;
+    -webkit-box-shadow: #d8d3d3 3px;
+            box-shadow: #d8d3d3 3px;
   }
   .diff_propos:hover {
     opacity: 0.8;
@@ -776,13 +745,12 @@ h2 {
   .titre_footer {
     margin-top: -20px;
   }
-  .mention_part {
+  .mention {
     margin-top: 10px;
   }
-  .contact_part {
+  .contact {
     margin-top: 10px;
   }
-  /*fin footer*/
 }
 
 /*base*/
@@ -824,7 +792,6 @@ h4 {
   text-overflow: ellipsis;
 }
 
-/*fin base*/
 .decr {
   color: grey;
   margin-left: 10px;
@@ -835,10 +802,6 @@ h4 {
   font-size: 30px;
   margin-left: 30px;
   margin-right: 30px;
-}
-
-h2 {
-  margin-left: 10px;
 }
 
 /*section_fonctionnement*/
@@ -899,7 +862,6 @@ h2 {
   font-size: 22px;
 }
 
-/*fin section_fonctionnement*/
 /*section_restaurants*/
 .titre_restaurant {
   position: relative;
@@ -1033,7 +995,7 @@ h2 {
   top: 1.8px;
 }
 
-.cm_2:active {
+.cm_2:hover {
   color: pink;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
@@ -1041,7 +1003,6 @@ h2 {
   font-size: 35px;
 }
 
-/*fin coeur*/
 /*debut menu*/
 .head_menu {
   display: -webkit-box;
@@ -1078,7 +1039,6 @@ h2 {
   height: 250px;
 }
 
-/*fin debut menu*/
 /*bloc  plat*/
 .menu_resto {
   padding: 0px 20px;
@@ -1164,5 +1124,29 @@ h2 {
   text-transform: uppercase;
 }
 
-/*fin plat*/
+.fas.fa-check-circle {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  cursor: pointer;
+  min-height: 90px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px #cdcfba;
+          box-shadow: 0px 0px 20px #cdcfba;
+  overflow: hidden;
+  -webkit-animation: fadein;
+          animation: fadein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 /*# sourceMappingURL=main.css.map */

@@ -20,8 +20,6 @@
     height: 250px;
 }
 
-/*fin debut menu*/
-
 /*bloc  plat*/
 .menu_resto {
     padding: 0px 20px;
@@ -48,35 +46,31 @@
     border-top-left-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    
-
 }
 
-
 .prix {
-display: flex;
-background-color: white;
-bottom: 0;
-margin-bottom: -50px;
-padding-right: 10px;
-padding-top: 60px;
-
-
+    display: flex;
+    background-color: white;
+    bottom: 0;
+    margin-bottom: -50px;
+    padding-right: 10px;
+    padding-top: 60px;
 }
 
 .page_menu {
-   border-top-right-radius: 50px;
-   border-top-left-radius: 50px;
-   margin-top: -90px;
-   position: relative;
-   width: 100%;
-   background-color: #F4F4F4;
-   padding-top: 15px;
-
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    background-color: #F4F4F4;
+    padding-top: 15px;
 }
-.nom_resto{
+
+.nom_resto {
     margin: 15px 0 5px 0;
 }
+
 .bloc {
     margin-top: 15px;
     display: flex;
@@ -89,11 +83,25 @@ padding-top: 60px;
     opacity: 1;
     display: flex;
     flex-direction: column;
-    
-    & h2{
+
+    & h2 {
         text-transform: uppercase;
     }
-    
 }
 
-/*fin plat*/
+.fas.fa-check-circle {
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+}
+
+.plat {
+    display: flex;
+    height: auto;
+    cursor: pointer;
+    min-height: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #cdcfba;
+    overflow: hidden;
+    animation: fadein;
+    animation-fill-mode: both;
+}
