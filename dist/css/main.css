@@ -648,6 +648,13 @@ h2 {
     display: flex;
     margin-left: 50px;
   }
+  .fas.fa-heart:hover {
+    color: pink;
+    -webkit-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    z-index: 3;
+    font-size: 35px;
+  }
   /*bouton commander */
   .bouton_menu {
     width: 1000px;
@@ -745,6 +752,20 @@ h2 {
   .diff_propos:hover {
     opacity: 0.8;
     background-color: #9356DC;
+  }
+  .fas.fa-heart:hover {
+    color: pink;
+    -webkit-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    z-index: 3;
+    font-size: 35px;
+  }
+  .cm_2:hover {
+    color: pink;
+    -webkit-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    z-index: 2;
+    font-size: 35px;
   }
   /*footer*/
   footer {
@@ -982,15 +1003,14 @@ h4 {
 .fas.fa-heart {
   position: absolute;
   color: transparent;
-  right: 33.5px;
   top: -1.6px;
 }
 
-.fas.fa-heart:hover {
+.fas.fa-heart:active {
   color: pink;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
-  z-index: 2;
+  z-index: 3;
   font-size: 35px;
 }
 
@@ -1015,7 +1035,8 @@ h4 {
 .cm_1 {
   position: relative;
   right: 35px;
-  color: blue;
+  left: -38px;
+  z-index: 4;
 }
 
 .cm_2 {
@@ -1024,12 +1045,17 @@ h4 {
   top: 1.8px;
 }
 
-.cm_2:hover {
+.cm_2:active {
   color: pink;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
   z-index: 2;
   font-size: 35px;
+}
+
+.coeur_1 {
+  right: 34px;
+  z-index: 4;
 }
 
 /*debut menu*/

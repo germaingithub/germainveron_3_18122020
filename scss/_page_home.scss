@@ -172,14 +172,16 @@ h4 {
 .fas.fa-heart {
     position: absolute;
     color: transparent;
-    right: 33.5px;
+    
     top: -1.6px;
 }
 
-.fas.fa-heart:hover {
+.fas.fa-heart:active {
     @include coeuranim;
-    z-index: 2;
+    z-index: 3;
     font-size: 35px;
+   
+
 }
 
 .coeur {
@@ -197,7 +199,8 @@ h4 {
 .cm_1 {
     position: relative;
     right: 35px;
-    color: blue;
+   left: -38px;
+    z-index: 4;
 }
 
 .cm_2 {
@@ -206,9 +209,13 @@ h4 {
     top: 1.8px;
 }
 
-.cm_2:hover {
+.cm_2:active {
     @include coeuranim;
     z-index: 2;
     font-size: 35px;
 }
 
+.coeur_1{
+    right: 34px;
+    z-index: 4;
+}

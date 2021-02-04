@@ -187,6 +187,13 @@
         display: flex;
         margin-left: 50px;
     }
+    .fas.fa-heart:hover {
+        @include coeuranim;
+        z-index: 3;
+        font-size: 35px;
+
+
+    }
     /*bouton commander */
     .bouton_menu {
         width: 1000px;
@@ -266,7 +273,16 @@
             background-color: $primary-color;
         }
     }
-
+.fas.fa-heart:hover {
+    @include coeuranim;
+    z-index: 3;
+    font-size: 35px;
+}
+.cm_2:hover {
+    @include coeuranim;
+    z-index: 2;
+    font-size: 35px;
+}
     /*footer*/
     footer {
         display: flex;

@@ -29,10 +29,10 @@
 .check {
     display: flex;
     height: 100%;
-    background-color: #99E2D0;
+    background-color: $tertiary-color;
     font-size: 30px;
     margin-right: -40px;
-    color: white;
+    color: $white-color;
     align-items: center;
     justify-content: center;
 }
