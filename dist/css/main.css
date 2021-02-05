@@ -400,11 +400,13 @@ h2 {
 }
 
 #loader_1 {
+  -webkit-animation: loader;
+          animation: loader;
   -webkit-transition: visibility 3s;
   transition: visibility 3s;
   visibility: hidden;
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   top: 0;
   right: 0;
   bottom: 0;
@@ -422,6 +424,24 @@ h2 {
           align-items: center;
   font-weight: 700;
   background-color: #f2f2f2;
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1070px) {
