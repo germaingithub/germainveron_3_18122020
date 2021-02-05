@@ -232,8 +232,6 @@ h2 {
 /*animation_validation*/
 .plat:active .descri_plat {
   width: 70%;
-  -webkit-animation-timing-function: .1s;
-          animation-timing-function: .1s;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   min-width: 200px;
@@ -446,8 +444,6 @@ h2 {
   /*fin base*/
   .plat:hover .descri_plat {
     width: 70%;
-    -webkit-animation-timing-function: .1s;
-            animation-timing-function: .1s;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     min-width: 200px;
@@ -716,8 +712,6 @@ h2 {
   }
   .plat:hover .descri_plat {
     width: 80%;
-    -webkit-animation-timing-function: .1s;
-            animation-timing-function: .1s;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     min-width: 400px;

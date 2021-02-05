@@ -26,7 +26,6 @@
         &:hover {
             & .descri_plat {
                 width: 70%;
-                animation-timing-function: .1s;
                 transition: 0.5s ease-in-out;
                 min-width: 200px;
                 max-width: 220px;
@@ -242,7 +241,6 @@
         &:hover {
             & .descri_plat {
                 width: 80%;
-                animation-timing-function: .1s;
                 transition: 0.5s ease-in-out;
                 min-width: 400px;
             }
