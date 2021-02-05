@@ -116,6 +116,7 @@ h2 {
     text-align: center;
     &:active {
         opacity: 0.8;
+        box-shadow: 5px 5px grey;
     }
 }
 

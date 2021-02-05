@@ -141,6 +141,8 @@ h2 {
 
 .bouton_debut:active, .bouton_menu:active {
   opacity: 0.8;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
 }
 
 .bouton_menu {
@@ -400,6 +402,9 @@ h2 {
 }
 
 #loader_1 {
+  -webkit-transition: visibility 3s;
+  transition: visibility 3s;
+  visibility: hidden;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -419,9 +424,6 @@ h2 {
           align-items: center;
   font-weight: 700;
   background-color: #f2f2f2;
-  visibility: hidden;
-  -webkit-transition: visibility 3s;
-  transition: visibility 3s;
 }
 
 @media screen and (min-width: 1070px) {
@@ -495,6 +497,8 @@ h2 {
   }
   .bouton_debut:hover, .bouton_menu:hover {
     opacity: 0.8;
+    -webkit-box-shadow: 5px 5px grey;
+            box-shadow: 5px 5px grey;
   }
   .mention {
     padding-top: 20px;
@@ -650,8 +654,8 @@ h2 {
   }
   .fas.fa-heart:hover {
     color: pink;
-    -webkit-transition: color 0.5s ease-out;
-    transition: color 0.5s ease-out;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
     z-index: 3;
     font-size: 35px;
   }
@@ -699,6 +703,8 @@ h2 {
   }
   .bouton_debut:hover, .bouton_menu:hover {
     opacity: 0.8;
+    -webkit-box-shadow: 5px 5px grey;
+            box-shadow: 5px 5px grey;
   }
   .recherche_bloc {
     display: -webkit-box;
@@ -755,15 +761,15 @@ h2 {
   }
   .fas.fa-heart:hover {
     color: pink;
-    -webkit-transition: color 0.5s ease-out;
-    transition: color 0.5s ease-out;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
     z-index: 3;
     font-size: 35px;
   }
   .cm_2:hover {
     color: pink;
-    -webkit-transition: color 0.5s ease-out;
-    transition: color 0.5s ease-out;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
     z-index: 2;
     font-size: 35px;
   }
@@ -1008,8 +1014,8 @@ h4 {
 
 .fas.fa-heart:active {
   color: pink;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
   z-index: 3;
   font-size: 35px;
 }
@@ -1047,8 +1053,8 @@ h4 {
 
 .cm_2:active {
   color: pink;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
   z-index: 2;
   font-size: 35px;
 }
