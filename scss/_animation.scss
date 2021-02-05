@@ -136,14 +136,10 @@
     justify-content: center;
 }
 
-#loader_1 {
-      
-   animation: loader;
-   transition: visibility 3s;
-   visibility: hidden;
-   
+#loader_1 { 
+ 
    position: fixed;
-   z-index: 10;
+   z-index: 1000;
    top: 0;
    right: 0;
    bottom: 0;
@@ -155,17 +151,15 @@
    align-items: center;
    font-weight: 700;
    background-color: $back-color;
+   animation: loader;
+   animation-delay: 3s;
+   animation-fill-mode: both;
+   z-index: 100;
     }
     
-  
-    @keyframes loader {
-
-        100% {
-            opacity: 0;
-        }
-
-        0% {
-            opacity: 1;
-        }
-    
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -2;
+    }
 }
