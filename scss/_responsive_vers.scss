@@ -147,7 +147,7 @@
         background-color: $back-color;
         border-radius: 30px;
         padding-right: 30px;
-        box-shadow: rgb(209, 209, 209) 3px 3px 3px 3px;
+        box-shadow: rgb(209, 209, 209) 3px 3px;
         &:hover {
             opacity: 0.8;
             background-color: $primary-color;
@@ -267,7 +267,7 @@
         background-color: $back-color;
         border-radius: 30px;
         padding-right: 30px;
-        box-shadow: rgb(216, 211, 211) 3px;
+        box-shadow: rgb(216, 211, 211) 3px 3px;
         &:hover {
             opacity: 0.8;
             background-color: $primary-color;
